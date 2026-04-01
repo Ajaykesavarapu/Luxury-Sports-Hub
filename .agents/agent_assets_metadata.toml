@@ -1,0 +1,122 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "bZn_w4PSFrD6rTNdd_o46"
+uri = "file://artifacts/zenithh/public/images/hero.png"
+type = "image"
+title = "hero stadium"
+
+[[generated]]
+id = "WvpUaIRWYIekln1XYlMu5"
+uri = "file://artifacts/zenithh/public/images/football.png"
+type = "image"
+title = "football training"
+
+[[generated]]
+id = "-OVpva6i4E1cwovmE7Dd5"
+uri = "file://artifacts/zenithh/public/images/cricket.png"
+type = "image"
+title = "cricket academy"
+
+[[generated]]
+id = "vu2hmXYKpiXCa7f9ZJD3t"
+uri = "file://artifacts/zenithh/public/images/basketball.png"
+type = "image"
+title = "basketball training"
+
+[[generated]]
+id = "36GEbDPFYy4LN7dCowal4"
+uri = "file://artifacts/zenithh/public/images/tennis.png"
+type = "image"
+title = "tennis coaching"
+
+[[generated]]
+id = "i1iFbtg7VnI9JsGSNv5-x"
+uri = "file://artifacts/zenithh/public/images/fitness.png"
+type = "image"
+title = "fitness gym"
+
+[[generated]]
+id = "VhMLNhz8nDN6L9NVLsxoQ"
+uri = "file://artifacts/zenithh/public/images/athletics.png"
+type = "image"
+title = "athletics training"
+
+[[generated]]
+id = "-ZYKxixJaPsrrt8nDEZjG"
+uri = "file://artifacts/zenithh/public/images/coach-david.png"
+type = "image"
+title = "head coach david"
+
+[[generated]]
+id = "HUzeM46rQEZCb_b-wFJqq"
+uri = "file://artifacts/zenithh/public/images/coach-maria.png"
+type = "image"
+title = "coach maria"
+
+[[generated]]
+id = "pqXxmVGM8C82sNxzIrLbc"
+uri = "file://artifacts/zenithh/public/images/coach-james.png"
+type = "image"
+title = "coach james"
+
+[[generated]]
+id = "-qsQiMwCiori7PSiIs_3m"
+uri = "file://artifacts/zenithh/public/images/facility-indoor.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "bp2sqWyvaXWEogpPTsZbT"
+uri = "file://artifacts/zenithh/public/images/facility-outdoor.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "J4ZY9rFTerx7Slcolat9-"
+uri = "file://artifacts/zenithh/public/images/facility-gym.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "pwJ7lBSpUXjCWsCZpnOtR"
+uri = "file://artifacts/zenithh/public/images/facility-recovery.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "hvTQwPkWywJeuLeBs28dy"
+uri = "file://artifacts/zenithh/public/images/facility-lab.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "S9f2P-BNbbTpnrYx4hXc_"
+uri = "file://artifacts/zenithh/public/images/gallery-1.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mUjmO8fuW2uGYwlkA-vMy"
+uri = "file://artifacts/zenithh/public/images/gallery-2.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "857YfbVfJwtnAP1qsPvFW"
+uri = "file://artifacts/zenithh/public/images/gallery-3.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5NryMpdN02f9b-D9wqSZc"
+uri = "file://artifacts/zenithh/public/images/gallery-4.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "gfY49G_1zmKP68pTPJmxz"
+uri = "file://artifacts/zenithh/public/images/coach-priya.png"
+type = "image"
+title = "generated_image"

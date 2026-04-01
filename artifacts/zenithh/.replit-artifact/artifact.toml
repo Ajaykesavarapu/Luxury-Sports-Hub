@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "ZENITHH Sports"
+version = "1.0.0"
+id = "artifacts/zenithh"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19704
+
+[services.development]
+run = "pnpm --filter @workspace/zenithh run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/zenithh", "run", "build" ]
+publicDir = "artifacts/zenithh/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19704"
+BASE_PATH = "/"
