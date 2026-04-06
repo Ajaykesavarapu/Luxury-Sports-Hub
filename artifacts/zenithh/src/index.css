@@ -45,65 +45,41 @@
 }
 
 :root {
-  /* Dark Luxury Theme by default */
-  --background: 0 0% 5%; /* #0D0D0D Deep Black */
-  --foreground: 0 0% 100%; /* #FFFFFF White */
+  /* White / Light Luxury Theme */
+  --background: 0 0% 100%; /* #FFFFFF White */
+  --foreground: 0 0% 8%; /* Near Black */
   
-  --card: 0 0% 10%; /* #1A1A1A Charcoal */
-  --card-foreground: 0 0% 100%;
-  --card-border: 0 0% 17%;
+  --card: 0 0% 97%; /* Very Light Grey */
+  --card-foreground: 0 0% 8%;
+  --card-border: 0 0% 88%;
   
-  --popover: 0 0% 10%;
-  --popover-foreground: 0 0% 100%;
-  --popover-border: 0 0% 17%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 8%;
+  --popover-border: 0 0% 88%;
   
   --primary: 45 68% 47%; /* #C9A227 Gold */
-  --primary-foreground: 0 0% 5%;
+  --primary-foreground: 0 0% 100%;
   
   --secondary: 0 100% 27%; /* #8B0000 Crimson Red */
   --secondary-foreground: 0 0% 100%;
   
-  --muted: 0 0% 17%; /* #2B2B2B Dark Grey */
-  --muted-foreground: 0 0% 70%;
+  --muted: 0 0% 94%; /* Light Grey */
+  --muted-foreground: 0 0% 40%;
   
-  --accent: 0 0% 17%;
-  --accent-foreground: 0 0% 100%;
+  --accent: 0 0% 94%;
+  --accent-foreground: 0 0% 8%;
   
   --destructive: 0 100% 27%;
   --destructive-foreground: 0 0% 100%;
   
-  --border: 0 0% 17%;
-  --input: 0 0% 17%;
+  --border: 0 0% 88%;
+  --input: 0 0% 88%;
   --ring: 45 68% 47%;
   
   --app-font-sans: 'Inter', sans-serif;
   --app-font-heading: 'Montserrat', sans-serif;
   
   --radius: 0.5rem;
-}
-
-.dark {
-  --background: 0 0% 5%;
-  --foreground: 0 0% 100%;
-  --card: 0 0% 10%;
-  --card-foreground: 0 0% 100%;
-  --card-border: 0 0% 17%;
-  --popover: 0 0% 10%;
-  --popover-foreground: 0 0% 100%;
-  --popover-border: 0 0% 17%;
-  --primary: 45 68% 47%;
-  --primary-foreground: 0 0% 5%;
-  --secondary: 0 100% 27%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 0 0% 17%;
-  --muted-foreground: 0 0% 70%;
-  --accent: 0 0% 17%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 100% 27%;
-  --destructive-foreground: 0 0% 100%;
-  --border: 0 0% 17%;
-  --input: 0 0% 17%;
-  --ring: 45 68% 47%;
 }
 
 @layer base {
