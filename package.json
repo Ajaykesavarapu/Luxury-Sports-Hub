@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "cd client && npm install && npx vite build",
-    "dev:client": "cd client && npx vite --host 0.0.0.0",
-    "dev": "cd client && npx vite --host 0.0.0.0"
+    "build": "pnpm --filter @workspace/client run build",
+    "dev:client": "pnpm --filter @workspace/client run dev",
+    "dev": "pnpm --filter @workspace/client run dev"
   },
   "private": true,
   "devDependencies": {
