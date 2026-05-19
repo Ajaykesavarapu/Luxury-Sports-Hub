@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "pnpm --filter @workspace/client run build",
-    "dev:client": "pnpm --filter @workspace/client run dev",
-    "dev": "pnpm --filter @workspace/client run dev"
+    "build": "npm run build --prefix client",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "npm run dev --prefix client"
   },
   "private": true,
   "devDependencies": {
