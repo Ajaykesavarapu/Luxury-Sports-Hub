@@ -5,18 +5,6 @@
   "references": [
     {
       "path": "./client"
-    },
-    {
-      "path": "./server"
-    },
-    {
-      "path": "./lib/db"
-    },
-    {
-      "path": "./lib/api-client-react"
-    },
-    {
-      "path": "./lib/api-zod"
     }
   ]
 }

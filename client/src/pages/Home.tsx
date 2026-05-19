@@ -125,7 +125,9 @@ export default function Home() {
   const heroContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1800);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
     return () => clearTimeout(timer);
   }, []);
 

@@ -48,15 +48,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the client build directory
-app.use(express.static(path.join(process.cwd(), "..", "client", "dist")));
-
 app.use("/api", router);
-
-// Serve index.html for all non-API routes (client-side routing)
-app.get(/^\/(?!api).*/, (req: express.Request, res: express.Response) => {
-  res.sendFile(path.join(process.cwd(), "..", "client", "dist", "index.html"));
-});
 
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   logger.error({ err }, "Unhandled application error");

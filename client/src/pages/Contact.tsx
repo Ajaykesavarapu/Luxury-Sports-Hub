@@ -55,13 +55,26 @@ export default function Contact() {
     sport: z.string().min(1, "Please select a sport/program"),
     enquiryType: z.string().min(1, "Please select an enquiry type"),
     institution: z.string().optional(),
+    preferredTiming: z.string().optional(),
+    attendanceType: z.string().min(1, "Please select attendance type"),
+    numberOfAttendees: z.string().optional(),
+    friendReferral: z.string().optional(),
+    referralMobile: z.string().optional(),
+    referralEmail: z.string().optional(),
     message: z.string().min(10, "Message must be at least 10 characters")
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: { name: "", email: "", phone: "", sport: "", enquiryType: "", institution: "", message: "" }
+    defaultValues: { 
+      name: "", email: "", phone: "", sport: "", enquiryType: "", institution: "", 
+      preferredTiming: "", attendanceType: "Individual", numberOfAttendees: "", 
+      friendReferral: "No", referralMobile: "", referralEmail: "", message: "" 
+    }
   });
+
+  const attendanceType = form.watch("attendanceType");
+  const friendReferral = form.watch("friendReferral");
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
@@ -277,18 +290,40 @@ export default function Contact() {
                     )}
                   />
 
-                  <FormField
-                    control={form.control}
-                    name="institution"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Institution (Optional)</FormLabel>
-                        <FormControl>
-                          <Input placeholder="e.g. Oakridge International" className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus-visible:ring-primary/40 focus-visible:border-primary text-[var(--text-primary)] h-14 rounded-none transition-all placeholder:text-[var(--text-muted)] font-light" {...field} />
-                        </FormControl>
-                      </FormItem>
-                    )}
-                  />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <FormField
+                      control={form.control}
+                      name="institution"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Institution (Optional)</FormLabel>
+                          <FormControl>
+                            <Input placeholder="e.g. Oakridge International" className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus-visible:ring-primary/40 focus-visible:border-primary text-[var(--text-primary)] h-14 rounded-none transition-all placeholder:text-[var(--text-muted)] font-light" {...field} />
+                          </FormControl>
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="preferredTiming"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Preferred Timing</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus:ring-primary/40 text-[var(--text-primary)] h-14 rounded-none">
+                                <SelectValue placeholder="Select Timing" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent className="bg-[var(--bg-secondary)] border-[var(--border-medium)] text-[var(--text-primary)] rounded-none">
+                              <SelectItem value="7:00 AM - 10:00 AM" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">7:00 AM - 10:00 AM</SelectItem>
+                              <SelectItem value="5:00 PM - 8:00 PM" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">5:00 PM - 8:00 PM</SelectItem>
+                            </SelectContent>
+                          </Select>
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <FormField
@@ -334,6 +369,96 @@ export default function Contact() {
                       )}
                     />
                   </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <FormField
+                      control={form.control}
+                      name="attendanceType"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Attendance Type *</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus:ring-primary/40 text-[var(--text-primary)] h-14 rounded-none">
+                                <SelectValue placeholder="Select" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent className="bg-[var(--bg-secondary)] border-[var(--border-medium)] text-[var(--text-primary)] rounded-none">
+                              <SelectItem value="Individual" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">Individual</SelectItem>
+                              <SelectItem value="Team" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">Team</SelectItem>
+                            </SelectContent>
+                          </Select>
+                        </FormItem>
+                      )}
+                    />
+
+                    {attendanceType === "Team" && (
+                      <FormField
+                        control={form.control}
+                        name="numberOfAttendees"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Number of People</FormLabel>
+                            <FormControl>
+                              <Input type="number" placeholder="e.g. 5" className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus-visible:ring-primary/40 focus-visible:border-primary text-[var(--text-primary)] h-14 rounded-none transition-all placeholder:text-[var(--text-muted)] font-light" {...field} />
+                            </FormControl>
+                          </FormItem>
+                        )}
+                      />
+                    )}
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-8">
+                    <FormField
+                      control={form.control}
+                      name="friendReferral"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Refer a Friend?</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus:ring-primary/40 text-[var(--text-primary)] h-14 rounded-none">
+                                <SelectValue placeholder="Select" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent className="bg-[var(--bg-secondary)] border-[var(--border-medium)] text-[var(--text-primary)] rounded-none">
+                              <SelectItem value="No" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">No</SelectItem>
+                              <SelectItem value="Yes" className="focus:bg-[var(--bg-secondary)] focus:text-primary cursor-pointer uppercase text-[10px] tracking-widest py-3">Yes</SelectItem>
+                            </SelectContent>
+                          </Select>
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  {friendReferral === "Yes" && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-[var(--bg-primary)] p-6 border border-[var(--border-light)]">
+                      <FormField
+                        control={form.control}
+                        name="referralMobile"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Friend's Mobile</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Friend's Mobile" className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus-visible:ring-primary/40 focus-visible:border-primary text-[var(--text-primary)] h-14 rounded-none transition-all placeholder:text-[var(--text-muted)] font-light" {...field} />
+                            </FormControl>
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="referralEmail"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="uppercase text-[10px] tracking-[0.3em] text-muted font-black">Friend's Email</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Friend's Email" className="bg-[var(--bg-secondary)] border-[var(--border-medium)] focus-visible:ring-primary/40 focus-visible:border-primary text-[var(--text-primary)] h-14 rounded-none transition-all placeholder:text-[var(--text-muted)] font-light" {...field} />
+                            </FormControl>
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+                  )}
 
                   <FormField
                     control={form.control}
