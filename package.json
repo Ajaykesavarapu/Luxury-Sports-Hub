@@ -8,6 +8,12 @@
     "dev": "npm run dev --prefix client"
   },
   "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "dependencies": {
+    "@vercel/node": "^5.0.2"
+  },
   "devDependencies": {
     "@vercel/node": "^5.1.8",
     "typescript": "~5.9.2"
