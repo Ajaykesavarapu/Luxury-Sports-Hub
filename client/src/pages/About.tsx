@@ -48,7 +48,7 @@ export default function About() {
       {/* ═══ ABOUT INTRO ═══ */}
       <section className="py-40 bg-[var(--bg-primary)]">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2 relative group">
               <div className="premium-image-hover relative aspect-[4/3] overflow-hidden rounded-lg border border-[var(--border-light)]">
                 <img loading="lazy" src="/images/about-interior.png" alt="Zenithh Arena Interior" className="w-full h-full object-cover" />
@@ -59,10 +59,10 @@ export default function About() {
 
             <div className="w-full lg:w-1/2">
               <span className="text-[var(--color-gold-primary)] font-bold tracking-[0.5em] uppercase text-[10px] block mb-6">PREMIER ACADEMY</span>
-              <h2 className="text-3xl md:text-5xl font-black uppercase text-[var(--text-primary)] leading-relaxed tracking-widest mb-10">
+              <h2 className="text-3xl md:text-5xl font-black uppercase text-[var(--text-primary)] leading-[1.15] tracking-widest mb-6 md:mb-10">
                 WE BUILD <span className="text-[var(--color-gold-primary)] italic">CHAMPIONS</span> <br /> WITH PRECISION
               </h2>
-              <div className="w-20 h-[1px] bg-[var(--color-gold-primary)] mb-12" />
+              <div className="w-20 h-[1px] bg-[var(--color-gold-primary)] mb-8 md:mb-12" />
               <div className="space-y-8 text-[var(--text-muted)] text-lg leading-relaxed font-light">
                 <p>
                   Zenithh Sports Arena is an institution of athletic excellence. Founded in Hyderabad with a mission to create world-class infrastructure for serious athletes, schools, and colleges.
@@ -71,7 +71,7 @@ export default function About() {
                   We offer 9 professionally coached sports disciplines under one roof — supported by national-level coaches and a structured development pathway from beginner to elite performance.
                 </p>
               </div>
-              <div className="mt-16">
+              <div className="mt-8 md:mt-16">
                 <Link to="/contact" className="btn-primary">
                   PARTNER WITH US
                 </Link>
@@ -93,8 +93,8 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {VALUES.map((val, i) => (
-              <div key={i} className="p-12 border border-[var(--border-light)] bg-[var(--bg-primary)] hover:border-[var(--color-gold-primary)]/30 transition-all duration-500 group relative">
-                <div className="text-[var(--color-gold-primary)] opacity-20 group-hover:opacity-100 mb-8 transition-all duration-500 transform group-hover:scale-110 origin-left">{val.icon}</div>
+              <div key={i} className="p-6 md:p-12 border border-[var(--border-light)] bg-[var(--bg-primary)] hover:border-[var(--color-gold-primary)]/30 transition-all duration-500 group relative">
+                <div className="text-[var(--color-gold-primary)] opacity-20 group-hover:opacity-100 mb-6 md:mb-8 transition-all duration-500 transform group-hover:scale-110 origin-left">{val.icon}</div>
                 <h3 className="text-xl font-black uppercase tracking-widest text-[var(--text-primary)] mb-4">{val.title}</h3>
                 <p className="text-[var(--text-muted)] text-sm leading-relaxed font-light">{val.desc}</p>
               </div>
@@ -114,14 +114,14 @@ export default function About() {
 
           <div className="max-w-4xl mx-auto">
             {MILESTONES.map((m, i) => (
-              <div key={i} className="flex gap-16 mb-24 relative group">
+              <div key={i} className="flex gap-4 sm:gap-16 mb-16 sm:mb-24 relative group">
                 <div className="flex flex-col items-center flex-shrink-0">
-                  <div className="w-24 h-24 border border-[var(--border-medium)] bg-[var(--bg-secondary)] text-[var(--color-gold-primary)] flex items-center justify-center font-black text-sm group-hover:border-[var(--color-gold-primary)] transition-all duration-500">{m.year}</div>
-                  {i < MILESTONES.length - 1 && <div className="w-[1px] flex-1 bg-[var(--bg-inverse)]/10 mt-6" />}
+                  <div className="w-16 h-16 sm:w-24 sm:h-24 border border-[var(--border-medium)] bg-[var(--bg-secondary)] text-[var(--color-gold-primary)] flex items-center justify-center font-black text-xs sm:text-sm group-hover:border-[var(--color-gold-primary)] transition-all duration-500">{m.year}</div>
+                  {i < MILESTONES.length - 1 && <div className="w-[1px] flex-1 bg-[var(--bg-inverse)]/10 mt-4 sm:mt-6" />}
                 </div>
-                <div className="pt-6">
-                  <h4 className="text-3xl font-black text-[var(--text-primary)] uppercase tracking-widest mb-6">{m.title}</h4>
-                  <p className="text-[var(--text-muted)] text-xl leading-relaxed font-light">{m.desc}</p>
+                <div className="pt-2 sm:pt-6">
+                  <h4 className="text-xl sm:text-3xl font-black text-[var(--text-primary)] uppercase tracking-widest mb-3 sm:mb-6">{m.title}</h4>
+                  <p className="text-[var(--text-muted)] text-base sm:text-xl leading-relaxed font-light">{m.desc}</p>
                 </div>
               </div>
             ))}
@@ -133,7 +133,7 @@ export default function About() {
       <section className="py-40 relative overflow-hidden">
         <div className="absolute inset-0 bg-[var(--color-gold-primary)]" />
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="text-5xl md:text-8xl font-black uppercase text-[var(--text-inverse)] mb-12 leading-relaxed tracking-widest">
+          <h2 className="text-4xl md:text-8xl font-black uppercase text-[var(--text-inverse)] mb-8 md:mb-12 leading-[1.1] tracking-widest">
             JOIN THE <br /> ZENITHH ELITE
           </h2>
           <Link to="/contact" className="btn-highlight">

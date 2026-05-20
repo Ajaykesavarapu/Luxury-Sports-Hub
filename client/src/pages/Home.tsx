@@ -236,7 +236,7 @@ export default function Home() {
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-primary selection:text-[var(--text-inverse)]">
 
       {/* ═══ HERO ═══ */}
-      <section id="home" ref={heroContentRef} className="hero-section relative min-h-[100vh] w-full flex items-center pt-[80px] pb-[40px] px-[80px] overflow-hidden">
+      <section id="home" ref={heroContentRef} className="hero-section relative min-h-[100vh] w-full flex items-center pt-[80px] pb-[40px] px-6 md:px-[80px] overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay
@@ -307,7 +307,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="flex flex-col lg:flex-row items-center gap-16 border border-[var(--color-gold-primary)]/20 p-8 md:p-12 bg-[var(--bg-card)] backdrop-blur-sm"
+            className="flex flex-col lg:flex-row items-center gap-16 border border-[var(--color-gold-primary)]/20 p-6 md:p-12 bg-[var(--bg-card)] backdrop-blur-sm"
           >
             <div className="w-full lg:w-3/5">
               <span className="text-[var(--color-gold-primary)] font-black tracking-[0.4em] uppercase text-xs mb-6 block">Premium Collaboration</span>
@@ -543,7 +543,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-grain opacity-20 pointer-events-none z-10" />
 
         <div className="container mx-auto px-6 relative z-20 text-center">
-          <h2 className="text-4xl md:text-7xl font-black uppercase tracking-widest mb-8 text-[var(--text-primary)] leading-relaxed max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-7xl font-black uppercase tracking-widest mb-8 text-[var(--text-primary)] leading-[1.15] max-w-5xl mx-auto">
             TRANSFORM YOUR CAMPUS <span className="text-[var(--color-gold-primary)]">WITH A HUB OF ATHLETICS</span> TODAY
           </h2>
           <p className="text-[var(--text-muted)] text-lg md:text-xl mb-16 max-w-2xl mx-auto font-medium">

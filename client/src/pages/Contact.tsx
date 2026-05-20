@@ -151,7 +151,7 @@ export default function Contact() {
       {/* ═══ CONTACT SECTION ═══ */}
       <section className="py-24 bg-[var(--bg-primary)] border-t border-[var(--border-light)]">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-20 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20 items-start">
 
             {/* LEFT — INFO */}
             <motion.div
@@ -202,7 +202,7 @@ export default function Contact() {
                     )
                   }
                 ].map((item, i) => (
-                  <motion.div key={i} variants={fadeIn} className="flex items-start gap-8 group">
+                  <motion.div key={i} variants={fadeIn} className="flex items-start gap-4 sm:gap-8 group">
                     <div className="w-14 h-14 bg-[var(--bg-secondary)] border border-[var(--border-light)] flex items-center justify-center flex-shrink-0 group-hover:border-primary/40 transition-all duration-300 text-primary">
                       {item.icon}
                     </div>
@@ -215,7 +215,7 @@ export default function Contact() {
               </div>
 
               {/* NEXT STEPS */}
-              <div className="bg-[var(--bg-secondary)] p-10 border border-[var(--border-light)] relative overflow-hidden">
+              <div className="bg-[var(--bg-secondary)] p-6 md:p-10 border border-[var(--border-light)] relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-gold-primary)]/5 rounded-full" />
                 <h4 className="font-black uppercase text-[10px] tracking-[0.4em] text-[var(--text-primary)] mb-8">WHAT HAPPENS NEXT?</h4>
                 <div className="space-y-6">
@@ -239,7 +239,7 @@ export default function Contact() {
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="lg:col-span-3 bg-[var(--bg-secondary)] border border-[var(--border-light)] p-12 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative overflow-hidden group hover:border-primary/20 transition-all duration-500"
+              className="lg:col-span-3 bg-[var(--bg-secondary)] border border-[var(--border-light)] p-6 sm:p-12 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative overflow-hidden group hover:border-primary/20 transition-all duration-500"
             >
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-1000" />
               

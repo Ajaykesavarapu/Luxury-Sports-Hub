@@ -340,11 +340,11 @@ export default function SportsPage() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
-              className={`flex flex-col ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-20 items-start`}
+              className={`flex flex-col ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-10 lg:gap-20 items-start`}
             >
               {/* IMAGE & PROGRAMS */}
               <motion.div variants={fadeIn} className="w-full lg:w-1/2 flex-shrink-0">
-                <div className="premium-image-hover relative overflow-hidden border border-[var(--border-medium)] aspect-[4/3] group mb-12">
+                <div className="premium-image-hover relative overflow-hidden border border-[var(--border-medium)] aspect-[4/3] group mb-6 lg:mb-12">
                   <img
                     src={sport.img}
                     alt={sport.title}
@@ -360,7 +360,7 @@ export default function SportsPage() {
                   <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted mb-6">Structured Programs</h4>
                   <div className="grid grid-cols-1 gap-4">
                     {sport.programs.map((prog, pi) => (
-                      <div key={pi} className="p-6 bg-[var(--bg-secondary)] border border-[var(--border-light)] hover:border-primary/20 transition-all duration-300">
+                      <div key={pi} className="p-5 sm:p-6 bg-[var(--bg-secondary)] border border-[var(--border-light)] hover:border-primary/20 transition-all duration-300">
                         <div className="flex items-center gap-3 mb-3">
                           <span className="w-1.5 h-1.5 bg-primary rotate-45 flex-shrink-0" />
                           <h5 className="font-black text-xs text-[var(--text-primary)] uppercase tracking-widest">{prog.name}</h5>
@@ -377,16 +377,16 @@ export default function SportsPage() {
                 <motion.span variants={fadeIn} className="text-primary font-bold tracking-[0.5em] uppercase text-[10px] block mb-6">
                   DISCIPLINE OVERVIEW
                 </motion.span>
-                <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-black uppercase mb-8 text-[var(--text-primary)] leading-tight">
+                <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-black uppercase mb-4 lg:mb-8 text-[var(--text-primary)] leading-tight">
                   {sport.tagline}
                 </motion.h2>
-                <div className="w-16 h-[2px] bg-primary mb-10" />
-                <motion.p variants={fadeIn} className="text-muted text-lg leading-relaxed mb-12 font-light">
+                <div className="w-16 h-[2px] bg-primary mb-6 lg:mb-10" />
+                <motion.p variants={fadeIn} className="text-muted text-lg leading-relaxed mb-6 lg:mb-12 font-light">
                   {sport.description}
                 </motion.p>
 
-                <motion.div variants={fadeIn} className="mb-12">
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted mb-8">Discipline Highlights</h4>
+                <motion.div variants={fadeIn} className="mb-6 lg:mb-12">
+                  <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted mb-4 lg:mb-8">Discipline Highlights</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
                     {sport.features.map((feat, fi) => (
                       <div key={fi} className="flex items-start gap-4 group">
@@ -397,7 +397,7 @@ export default function SportsPage() {
                   </div>
                 </motion.div>
 
-                <motion.div variants={fadeIn} className="mt-16 flex gap-6 flex-wrap">
+                <motion.div variants={fadeIn} className="mt-8 lg:mt-16 flex flex-col sm:flex-row gap-4 sm:gap-6">
                   <Link
                     to={`/sports/${sport.id}`}
                     className="btn-secondary"
@@ -438,7 +438,7 @@ export default function SportsPage() {
         <div className="absolute inset-0 bg-grain opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-[var(--color-gold-bright)]" />
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="text-4xl md:text-7xl font-black uppercase text-[var(--text-inverse)] mb-8 leading-relaxed tracking-widest">
+          <h2 className="text-3xl md:text-7xl font-black uppercase text-[var(--text-inverse)] mb-8 leading-[1.1] tracking-widest">
             READY TO START YOUR <br /> CAMPUS ATHLETICS JOURNEY?
           </h2>
           <p className="text-[var(--text-inverse)]/60 text-lg mb-12 max-w-2xl mx-auto font-medium">

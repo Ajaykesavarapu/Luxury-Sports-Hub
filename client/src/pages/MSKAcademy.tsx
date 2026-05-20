@@ -132,7 +132,7 @@ const MSKAcademy = () => {
       {/* ═══ PART 3: INTRODUCTION SECTION ═══ */}
       <section className="py-20 md:py-24 px-6 bg-[var(--bg-secondary)] relative overflow-hidden">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center gap-16">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -166,7 +166,7 @@ const MSKAcademy = () => {
                   <img
                     src="/images/msk_training.png"
                     alt="Athlete Training"
-                    className="w-full h-[450px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                    className="w-full h-[300px] md:h-[450px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700 hover:scale-105"
                   />
                 </div>
               </div>
@@ -181,7 +181,7 @@ const MSKAcademy = () => {
           <div className="relative">
             <div className="absolute inset-0 border-2 border-[var(--color-gold-primary)]/40 pointer-events-none -m-4 md:-m-12 md:rounded-none opacity-20"></div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center gap-16 relative z-10">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 relative z-10">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -219,7 +219,7 @@ const MSKAcademy = () => {
                     <img
                       src="/images/cricket.png"
                       alt="Cricket Action"
-                      className="w-full h-[450px] object-cover"
+                      className="w-full h-[300px] md:h-[450px] object-cover"
                     />
                   </div>
                 </div>
@@ -308,7 +308,7 @@ const MSKAcademy = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-[var(--bg-card)] border border-[var(--color-gold-primary)]/20 p-8 hover:border-[var(--color-gold-primary)] hover:shadow-[0_10px_40px_rgba(212,175,55,0.1)] transition-all duration-500 group transform hover:-translate-y-2 relative overflow-hidden"
+                className="bg-[var(--bg-card)] border border-[var(--color-gold-primary)]/20 p-6 sm:p-8 hover:border-[var(--color-gold-primary)] hover:shadow-[0_10px_40px_rgba(212,175,55,0.1)] transition-all duration-500 group transform hover:-translate-y-2 relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-[var(--color-gold-primary)]/5 rounded-bl-full transform translate-x-12 -translate-y-12 transition-all group-hover:bg-[var(--color-gold-primary)]/10"></div>
 
@@ -330,7 +330,7 @@ const MSKAcademy = () => {
       {/* ═══ PART 7: WHY CHOOSE US ═══ */}
       <section className="py-28 bg-[var(--bg-primary)]">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center gap-16">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -408,7 +408,7 @@ const MSKAcademy = () => {
             viewport={{ once: true }}
           >
             <Star className="w-12 h-12 text-[var(--bg-primary)] mx-auto mb-6 animate-pulse" fill="var(--bg-primary)" />
-            <h2 className="text-4xl md:text-7xl font-black uppercase text-[var(--bg-primary)] mb-6 tracking-[0.04em] leading-[1.2]">
+            <h2 className="text-3xl md:text-7xl font-black uppercase text-[var(--bg-primary)] mb-6 tracking-[0.04em] leading-[1.1]">
               Registrations Open
             </h2>
             <p className="text-[var(--bg-primary)]/80 text-xl md:text-2xl font-bold max-w-2xl mx-auto mb-10 leading-tight">

@@ -61,7 +61,7 @@ export default function Events() {
                   </div>
                 </div>
                 
-                <div className="p-10 flex-1 flex flex-col">
+                <div className="p-6 md:p-10 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 mb-4">
                     <Calendar className="w-4 h-4 text-[var(--color-gold-primary)]" />
                     <span className="text-[var(--color-gold-primary)] text-[10px] font-black uppercase tracking-[0.3em]">{event.date}</span>
@@ -109,7 +109,7 @@ export default function Events() {
       {/* HOST CTA */}
       <section className="py-40 bg-[var(--color-gold-primary)] relative overflow-hidden">
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="text-5xl md:text-8xl font-black uppercase text-[var(--text-inverse)] mb-12 leading-relaxed tracking-widest">
+          <h2 className="text-4xl md:text-8xl font-black uppercase text-[var(--text-inverse)] mb-12 leading-[1.1] tracking-widest">
             HOST YOUR <br /> CHAMPIONSHIP
           </h2>
           <p className="text-[var(--text-inverse)]/70 text-xl mb-12 max-w-2xl mx-auto font-medium">Zenithh Arena is available for inter-institution, corporate, and private sports events. Experience elite management.</p>

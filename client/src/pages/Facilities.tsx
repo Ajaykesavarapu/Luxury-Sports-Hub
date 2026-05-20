@@ -87,7 +87,7 @@ export default function Facilities() {
                   <h3 className="absolute bottom-6 left-8 text-3xl font-black uppercase text-[var(--text-primary)] tracking-widest z-20">{facility.title}</h3>
                 </div>
                 
-                <div className="p-10">
+                <div className="p-6 md:p-10">
                   <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-10 font-light">{facility.desc}</p>
                   <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                     {facility.features.map((feat, fi) => (
@@ -126,7 +126,7 @@ export default function Facilities() {
       {/* CTA */}
       <section className="py-32 bg-[var(--color-gold-primary)]">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-8xl font-black uppercase text-[var(--text-inverse)] leading-relaxed mb-10 tracking-widest">
+          <h2 className="text-4xl md:text-8xl font-black uppercase text-[var(--text-inverse)] leading-[1.1] mb-8 md:mb-10 tracking-widest">
             BOOK A <br/> FACILITY TOUR
           </h2>
           <p className="text-[var(--text-inverse)]/70 text-lg mb-12 max-w-xl mx-auto font-medium">Experience Hyderabad's premier multi-sport arena in person. Scheduled tours available daily.</p>
