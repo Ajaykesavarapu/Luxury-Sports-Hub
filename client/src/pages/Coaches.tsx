@@ -32,7 +32,7 @@ export default function Coaches() {
   return (
     <div className="pt-16 min-h-screen bg-[var(--bg-primary)]">
       {/* PAGE HERO */}
-      <section className="relative min-h-[70vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
+      <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-real.jpg" 
@@ -40,6 +40,7 @@ export default function Coaches() {
             className="w-full h-full object-cover object-center"
             style={{ filter: 'brightness(0.3)' }}
           />
+          <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--bg-primary)]" />
         </div>
         
@@ -50,10 +51,10 @@ export default function Coaches() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-[var(--color-gold-primary)] font-bold tracking-[0.5em] uppercase text-[10px] block mb-6">ELITE MENTORSHIP</span>
-            <h1 className="text-4xl md:text-7xl font-black uppercase text-[var(--text-primary)] mb-6 tracking-widest">
+            <h1 className="text-4xl md:text-7xl font-black uppercase text-white mb-6 tracking-widest">
               BEYOND <span className="text-[var(--color-gold-primary)] italic">COACHING</span>
             </h1>
-            <p className="text-[var(--text-muted)] text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
               Hyderabad's most decorated athletic veterans teaching the next generation of championship talent.
             </p>
           </motion.div>

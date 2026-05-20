@@ -349,22 +349,22 @@
   background: var(--bg-secondary);
   border: 1px solid var(--color-gold-primary);
   border-radius: 999px;
-  padding: 4px;
+  padding: 3px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   z-index: 999999;
   box-shadow: none;
-  width: 90px;
-  height: 44px;
+  width: 70px;
+  height: 34px;
   user-select: none;
   cursor: pointer;
 }
 
 .theme-toggle-slider {
   position: absolute;
-  width: 38px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
   background: #d4af37;
   border-radius: 999px;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -380,7 +380,7 @@
   border: none;
   background: transparent;
   color: var(--text-primary);
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   z-index: 1;
   transition: color 0.3s ease;
@@ -396,7 +396,7 @@
 }
 
 .dark-theme .theme-toggle-slider {
-  transform: translateX(44px);
+  transform: translateX(36px);
 }
 
 .light-theme .theme-toggle-container {
@@ -429,7 +429,7 @@
     z-index: 99999;
     width: calc(100vw - 80px);
     max-width: 1380px;
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -446,7 +446,7 @@
     background: var(--nav-bg-scrolled);
     border-color: var(--nav-border);
     top: 10px;
-    height: 72px;
+    height: 52px;
     box-shadow: none;
   }
 
@@ -461,7 +461,7 @@
   }
 
   .navbar-logo {
-    height: 56px;
+    height: 42px;
     width: auto;
     max-width: 350px;
     object-fit: contain;

@@ -97,7 +97,7 @@ export default function Navbar() {
         <li className="mobile-only-cta">
           <Link
             to="/contact"
-            className="btn-register w-full text-center flex items-center justify-center min-w-[180px] h-[52px]"
+            className="btn-register w-full text-center flex items-center justify-center min-w-[180px] h-[38px]"
           >
             Register Now
           </Link>
@@ -108,7 +108,7 @@ export default function Navbar() {
       <div className="navbar-cta hidden md:flex items-center gap-4">
         <Link
           to="/contact"
-          className="btn-register flex items-center justify-center min-w-[120px] h-[52px] px-8 leading-none"
+          className="btn-register flex items-center justify-center min-w-[120px] h-[38px] px-8 leading-none"
         >
           Register
         </Link>

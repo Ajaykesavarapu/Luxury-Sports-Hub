@@ -22,7 +22,7 @@ export const COACHES_DATA: Coach[] = [
   {
     id: "ramesh-gowda",
     name: "Donikena Ramesh",
-    role: "Performance Director (PD)",
+    role: "Physical Director",
     shortSummary: "Experienced performance-focused sports professional specializing in athlete development, fitness training, and coaching methodologies.",
     image: "/images/coach-Ramesh.jpeg",
     expertise: ["Athlete Conditioning", "Sports Performance Training", "Team Leadership"],
@@ -34,7 +34,7 @@ export const COACHES_DATA: Coach[] = [
       "Skilled in youth athlete development and coaching operations"
     ],
     skills: ["Athlete Conditioning", "Sports Performance Training", "Team Leadership", "Coaching Strategy", "Fitness & Endurance Training", "Sports Mentoring"],
-    about: "Donikena Ramesh Gowda is a dedicated Performance Director with a wealth of experience in high-performance sports environments. He has a proven track record of developing elite athletes and implementing structured coaching methodologies that focus on both physical excellence and mental discipline.",
+    about: "Donikena Ramesh Gowda is a dedicated Physical Director with a wealth of experience in high-performance sports environments. He has a proven track record of developing elite athletes and implementing structured coaching methodologies that focus on both physical excellence and mental discipline.",
     philosophy: "I believe in a holistic approach to athlete development where discipline, structured training, and constant mentorship create the foundation for competitive excellence.",
     achievements: [
       "Developed comprehensive performance modules for multiple sports disciplines",

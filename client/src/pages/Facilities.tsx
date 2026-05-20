@@ -54,14 +54,15 @@ export default function Facilities() {
             style={{ filter: 'brightness(var(--hero-brightness))' }}
             onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
           />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         
         <div className="relative z-10 text-center px-6">
           <span className="text-[var(--color-gold-primary)] font-bold tracking-[0.5em] uppercase text-[10px] block mb-6">ELITE INFRASTRUCTURE</span>
-          <h1 className="text-3xl md:text-5xl font-black uppercase text-[var(--text-primary)] mb-6">
+          <h1 className="text-3xl md:text-5xl font-black uppercase text-white mb-6">
             THE <span className="text-[var(--color-gold-primary)] italic">ARENA</span>
           </h1>
-          <p className="text-[var(--text-muted)] text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-white/80 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             Every square inch designed for peak athletic performance. Built for champions.
           </p>
         </div>

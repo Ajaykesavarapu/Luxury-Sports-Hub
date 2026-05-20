@@ -118,6 +118,7 @@ export default function Contact() {
             style={{ filter: 'brightness(var(--hero-brightness))' }}
             onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
           />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         
         <div className="relative z-10 text-center px-6">
@@ -132,7 +133,7 @@ export default function Contact() {
             initial={{ opacity: 0, translateY: "20px" }} 
             animate={{ opacity: 1, translateY: 0 }} 
             transition={{ delay: 0.1 }} 
-            className="text-3xl md:text-5xl font-black uppercase text-[var(--text-primary)] mb-8"
+            className="text-3xl md:text-5xl font-black uppercase text-white mb-8"
           >
             REGISTER <span className="text-primary italic">NOW</span>
           </motion.h1>
@@ -140,7 +141,7 @@ export default function Contact() {
             initial={{ opacity: 0, translateY: "20px" }} 
             animate={{ opacity: 1, translateY: 0 }} 
             transition={{ delay: 0.2 }} 
-            className="text-muted text-lg max-w-2xl mx-auto font-light leading-relaxed"
+            className="text-white/80 text-lg max-w-2xl mx-auto font-light leading-relaxed"
           >
             Start Your High-Performance Journey Today. Professional Training Awaits.
           </motion.p>

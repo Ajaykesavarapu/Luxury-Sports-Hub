@@ -71,6 +71,7 @@ const MSKAcademy = () => {
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
           />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">

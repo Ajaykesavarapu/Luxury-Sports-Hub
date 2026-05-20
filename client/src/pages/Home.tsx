@@ -244,14 +244,14 @@ export default function Home() {
 
             {/* Main Title Heading */}
             <div ref={heroTitleRef} className="mb-4">
-              <h1 className="hero-heading text-4xl md:text-5xl font-black uppercase tracking-[0.15em] leading-[1.4] text-[var(--text-primary)]">
+              <h1 className="hero-heading text-4xl md:text-5xl font-black uppercase tracking-[0.15em] leading-[1.4] text-white">
                 <span className="word inline-block">ELITE</span> <span className="word inline-block italic text-[#D4A017]">SPORTS</span><br />
                 <span className="word inline-block">ACADEMY</span> <span className="word inline-block">HYDERABAD</span>
               </h1>
             </div>
 
             {/* Description */}
-            <p className="hero-desc hero-subtitle text-lg md:text-[18px] text-[var(--text-primary)]/70 mb-4 max-w-[560px] font-light leading-[1.7]">
+            <p className="hero-desc hero-subtitle text-lg md:text-[18px] text-white/80 mb-4 max-w-[560px] font-light leading-[1.7]">
               Hyderabad's premier multi-sport training facility — combining world-class coaching, professional infrastructure, and 9 sports disciplines under one roof.
             </p>
 
@@ -260,7 +260,7 @@ export default function Home() {
               {["Cricket", "Pickleball", "Volleyball", "Chess", "Zumba", "Table Tennis", "Foosball", "Carrom", "Air Hockey", "VR Cricket", "Badminton"].map((sport) => (
                 <span
                   key={sport}
-                  className="sport-tag text-[var(--text-primary)]/40 font-bold uppercase tracking-[0.2em] hover:text-[var(--color-gold-bright)] hover:translate-y-[-2px] transition-all cursor-pointer"
+                  className="sport-tag text-white/50 font-bold uppercase tracking-[0.2em] hover:text-[var(--color-gold-bright)] hover:translate-y-[-2px] transition-all cursor-pointer"
                 >
                   {sport}
                 </span>

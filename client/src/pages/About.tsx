@@ -31,14 +31,15 @@ export default function About() {
             style={{ filter: 'brightness(var(--hero-brightness))' }}
             onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
           />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 text-center px-6">
           <span className="text-[var(--color-gold-primary)] font-bold tracking-[0.5em] uppercase text-[10px] block mb-6">OUR LEGACY</span>
-          <h1 className="text-4xl md:text-5xl font-black uppercase text-[var(--text-primary)] tracking-widest mb-6">
+          <h1 className="text-4xl md:text-5xl font-black uppercase text-white tracking-widest mb-6">
             ELITE <span className="text-[var(--color-gold-primary)] italic">STORY</span>
           </h1>
-          <p className="text-[var(--text-muted)] text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-white/80 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             Empowering Hyderabad's Next Generation of Champions Since 2026. A New Era of Athletic Excellence.
           </p>
         </div>

@@ -259,6 +259,7 @@ export default function SportsPage() {
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
           />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10 text-center">
@@ -273,7 +274,7 @@ export default function SportsPage() {
             initial={{ opacity: 0, translateY: "20px" }} 
             animate={{ opacity: 1, translateY: 0 }} 
             transition={{ delay: 0.1 }} 
-            className="text-4xl md:text-5xl font-black uppercase text-[var(--text-primary)] mb-8"
+            className="text-4xl md:text-5xl font-black uppercase text-white mb-8"
           >
             OUR <span className="text-primary italic">DISCIPLINES</span>
           </motion.h1>
@@ -281,7 +282,7 @@ export default function SportsPage() {
             initial={{ opacity: 0, translateY: "20px" }} 
             animate={{ opacity: 1, translateY: 0 }} 
             transition={{ delay: 0.2 }} 
-            className="text-muted text-lg max-w-2xl mx-auto font-light leading-relaxed"
+            className="text-white/80 text-lg max-w-2xl mx-auto font-light leading-relaxed"
           >
             9 Disciplines · Professional Coaching · World-Class Infrastructure. Explore our high-performance training programs in Hyderabad.
           </motion.p>
