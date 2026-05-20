@@ -1,0 +1,39 @@
+# Zenithh Sports Arena
+
+Hyderabad's premier multi-sport training facility. Elite coaching, world-class infrastructure, and structured athlete performance programs. Built for the next generation of champions.
+
+## Core Information
+- **Name**: Zenithh Sports Arena
+- **Phone**: +91 79971 71607 / +91 92814 72882
+- **Email**: info@zenithh.com
+- **Address**: Miyapur Metro Station Road, Miyapur, Hyderabad, Telangana 500049.
+- **Operating Hours**: Morning: 7:00 AM – 10:00 AM, Evening: 5:00 PM – 8:00 PM (Subject to seasonal changes)
+
+## Primary Sections & URLs
+
+- [Home](https://www.zenithh.com/) - Overview of disciplines, infrastructure, stats, testimonials from our community, and academy programs.
+- [Our Story](https://www.zenithh.com/about) - History of Zenithh, our high-performance mission, core values, and vision.
+- [Elite Coaches](https://www.zenithh.com/coaches) - Expert athletic instructors.
+- [Disciplines](https://www.zenithh.com/sports) - Training programs for multiple sports.
+- [Infrastructure](https://www.zenithh.com/facilities) - World-class infrastructure, sports setups, and bookings.
+- [Elite Sports Academy / MSK Academy](https://www.zenithh.com/msk-academy) - Focused academy training under MSK Cricket Academy standards.
+- [Tournaments](https://www.zenithh.com/events) - Active and upcoming sports tournaments and events in Hyderabad.
+- [Arena Gallery](https://www.zenithh.com/gallery) - Visual highlights of the facilities, courts, and training sessions.
+- [Membership & Registration](https://www.zenithh.com/contact) - Contact details, map location, and registration form.
+
+## Dynamic Sports Profiles
+- [Cricket](https://www.zenithh.com/sports/cricket) - Elite cricket coaching with professional net facilities and performance pathways.
+- [Pickleball](https://www.zenithh.com/sports/pickleball) - Premium court surfaces for Hyderabad's fastest growing sport.
+- [Volleyball](https://www.zenithh.com/sports/volleyball) - Team tactics, serves, spiking, and advanced conditioning.
+- [Chess](https://www.zenithh.com/sports/chess) - Cognitive excellence and strategic tournament preparation.
+- [Zumba](https://www.zenithh.com/sports/zumba) - Energetic cardiovascular dance fitness.
+- [Table Tennis](https://www.zenithh.com/sports/table-tennis) - High-speed rally training and precision reflex loops.
+- [Foosball](https://www.zenithh.com/sports/foosball) - Table football competitive strategy.
+- [Carrom](https://www.zenithh.com/sports/carrom) - Traditional board sport coaching on competition boards.
+- [VR Cricket](https://www.zenithh.com/sports/vr-cricket) - Immersive virtual reality cricket simulator training.
+- [Badminton Outdoor](https://www.zenithh.com/sports/badminton-outdoor) - All-weather court play and foundational coaching.
+
+## Elite Coaching Staff
+- [Donikena Ramesh](https://www.zenithh.com/coaches/ramesh-gowda) - Physical Director & Sports Performance specialist.
+- [Pallavi Podhula](https://www.zenithh.com/coaches/pallavi-podhula) - Multi-Sport Coach & Telangana Junior National Women's Handball Coach.
+- [Nagilla Mounika](https://www.zenithh.com/coaches/mounika-nagilla) - Kabaddi Coach & National Athlete.

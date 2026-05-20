@@ -25,11 +25,11 @@ export default function About() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/about-hero.jpg"
+            src="/images/placeholder.png"
             alt="Zenithh Sports Arena"
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
-            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -51,7 +51,7 @@ export default function About() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="w-full lg:w-1/2 relative group">
               <div className="premium-image-hover relative aspect-[4/3] overflow-hidden rounded-lg border border-[var(--border-light)]">
-                <img loading="lazy" src="/images/about-interior.png" alt="Zenithh Arena Interior" className="w-full h-full object-cover" />
+                <img loading="lazy" src="/images/placeholder.png" alt="Zenithh Arena Interior" className="w-full h-full object-cover" />
                 <div className="absolute top-8 left-8 bg-[var(--color-gold-primary)] text-[var(--text-inverse)] text-[10px] font-black uppercase tracking-[0.3em] px-5 py-3">EST. 2026</div>
               </div>
               <div className="absolute -top-6 -left-6 w-32 h-32 border-t border-l border-[var(--color-gold-primary)]/30 z-10 pointer-events-none" />

@@ -2,43 +2,43 @@ import React, { useState } from "react";
 import { X } from "lucide-react";
 
 const GALLERY_IMAGES = [
-  { src: "/images/volleyball.jpg", caption: "Professional Volleyball Arena", category: "Arena" },
-  { src: "/images/gallery-volley-1.jpg", caption: "Volleyball Training Session", category: "Arena" },
-  { src: "/images/gallery-volley-2.jpg", caption: "Volleyball Net Setup", category: "Arena" },
-  { src: "/images/gallery-volley-3.jpg", caption: "Volleyball Court View", category: "Arena" },
-  { src: "/images/gallery-volley-4.jpg", caption: "Volleyball Spiking Practice", category: "Arena" },
-  { src: "/images/gallery-volley-5.jpg", caption: "Volleyball Serve Setup", category: "Arena" },
-  { src: "/images/pickleball.jpg", caption: "Elite Pickleball Courts", category: "Racket Sports" },
-  { src: "/images/gallery-pickle-1.jpg", caption: "Pickleball Academy", category: "Racket Sports" },
-  { src: "/images/cricket.png", caption: "Premium Cricket Nets", category: "Cricket" },
-  { src: "/images/table-tennis.jpg", caption: "Table Tennis Championship Hall", category: "Indoor Sports" },
-  { src: "/images/gallery-tabletennis-1.jpg", caption: "Table Tennis Tables", category: "Indoor Sports" },
-  { src: "/images/gallery-tabletennis-2.jpg", caption: "Table Tennis Racket & Ball", category: "Indoor Sports" },
-  { src: "/images/gallery-tabletennis-3.jpg", caption: "Table Tennis Practice", category: "Indoor Sports" },
-  { src: "/images/gallery-tabletennis-4.jpg", caption: "Table Tennis Match View", category: "Indoor Sports" },
-  { src: "/images/chess.jpg", caption: "Strategic Chess Academy", category: "Indoor Sports" },
-  { src: "/images/gallery-chess-1.jpg", caption: "Chess Board Setup", category: "Indoor Sports" },
-  { src: "/images/foosball.jpg", caption: "Foosball & Gaming Lounge", category: "Recreation" },
-  { src: "/images/gallery-foosball-1.jpg", caption: "Foosball Table Detail", category: "Recreation" },
-  { src: "/images/gallery-foosball-2.jpg", caption: "Foosball Action Shot", category: "Recreation" },
-  { src: "/images/gallery-foosball-3.jpg", caption: "Foosball Players", category: "Recreation" },
-  { src: "/images/gallery-foosball-4.jpg", caption: "Foosball Setup", category: "Recreation" },
-  { src: "/images/gallery-foosball-5.jpg", caption: "Foosball Match", category: "Recreation" },
-  { src: "/images/carroms.jpg", caption: "Carrom Training Center", category: "Indoor Sports" },
-  { src: "/images/gallery-carroms-1.jpg", caption: "Carrom Board Focus", category: "Indoor Sports" },
-  { src: "/images/gallery-carroms-2.jpg", caption: "Carrom Coins Arrangement", category: "Indoor Sports" },
-  { src: "/images/air-hockey.jpg", caption: "Arcade Zone - Air Hockey", category: "Recreation" },
-  { src: "/images/gallery-airhockey-1.jpg", caption: "Air Hockey Puck & Striker", category: "Recreation" },
-  { src: "/images/zumba.jpg", caption: "Zumba & Fitness Studio", category: "Indoor Sports" },
-  { src: "/images/about-arena.jpg", caption: "Zenithh Infrastructure", category: "Arena" },
-  { src: "/images/DLP03630.JPG", caption: "Bridge Course Visit 1", category: "Events" },
-  { src: "/images/DLP03631.JPG", caption: "Bridge Course Visit 2", category: "Events" },
-  { src: "/images/DLP03633.JPG", caption: "Bridge Course Visit 3", category: "Events" },
-  { src: "/videos/C0010.MP4", caption: "Bridge Course Video 1", category: "Videos", type: "video" },
-  { src: "/videos/C0011.MP4", caption: "Bridge Course Video 2", category: "Videos", type: "video" },
-  { src: "/videos/C0013.MP4", caption: "Bridge Course Video 3", category: "Videos", type: "video" },
-  { src: "/videos/C0018.MP4", caption: "Bridge Course Video 4", category: "Videos", type: "video" },
-  { src: "/videos/C0021.MP4", caption: "Bridge Course Video 5", category: "Videos", type: "video" },
+  { src: "/images/placeholder.png", caption: "Professional Volleyball Arena", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Volleyball Training Session", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Volleyball Net Setup", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Volleyball Court View", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Volleyball Spiking Practice", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Volleyball Serve Setup", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Elite Pickleball Courts", category: "Racket Sports" },
+  { src: "/images/placeholder.png", caption: "Pickleball Academy", category: "Racket Sports" },
+  { src: "/images/placeholder.png", caption: "Premium Cricket Nets", category: "Cricket" },
+  { src: "/images/placeholder.png", caption: "Table Tennis Championship Hall", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Table Tennis Tables", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Table Tennis Racket & Ball", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Table Tennis Practice", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Table Tennis Match View", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Strategic Chess Academy", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Chess Board Setup", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Foosball & Gaming Lounge", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Foosball Table Detail", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Foosball Action Shot", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Foosball Players", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Foosball Setup", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Foosball Match", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Carrom Training Center", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Carrom Board Focus", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Carrom Coins Arrangement", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Arcade Zone - Air Hockey", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Air Hockey Puck & Striker", category: "Recreation" },
+  { src: "/images/placeholder.png", caption: "Zumba & Fitness Studio", category: "Indoor Sports" },
+  { src: "/images/placeholder.png", caption: "Zenithh Infrastructure", category: "Arena" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Visit 1", category: "Events" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Visit 2", category: "Events" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Visit 3", category: "Events" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Highlight 1", category: "Videos", type: "image" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Highlight 2", category: "Videos", type: "image" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Highlight 3", category: "Videos", type: "image" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Highlight 4", category: "Videos", type: "image" },
+  { src: "/images/placeholder.png", caption: "Bridge Course Highlight 5", category: "Videos", type: "image" },
 ];
 
 const CATEGORIES = ["All", "Arena", "Events", "Videos", "Cricket", "Racket Sports", "Indoor Sports", "Recreation"];
@@ -72,8 +72,8 @@ const GalleryImageItem = ({ image, onOpenLightbox }: { image: any, onOpenLightbo
           alt={image.caption}
           className="w-full h-auto object-cover"
           onError={() => {
-            if (src !== '/images/gallery-hero.jpg') {
-              setSrc('/images/gallery-hero.jpg');
+            if (src !== '/images/placeholder.png') {
+              setSrc('/images/placeholder.png');
             }
           }}
         />
@@ -102,7 +102,7 @@ export default function Gallery() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img loading="lazy" 
-            src="/images/gallery-hero.jpg" 
+            src="/images/placeholder.png" 
             alt="Zenithh Gallery" 
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}

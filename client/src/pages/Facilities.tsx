@@ -5,37 +5,37 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 const FACILITIES = [
   {
     title: "Indoor Cricket Nets",
-    img: "/images/cricket.jpg",
+    img: "/images/placeholder.png",
     desc: "Professional net practice bays with pitch simulation, bowling machine infrastructure, and batting crease markings. Year-round weather-independent training.",
     features: ["Multiple net bays", "Pitch simulation surface", "High-quality netting", "LED sports lighting"]
   },
   {
     title: "Pickleball Courts",
-    img: "/images/pickleball.jpg",
+    img: "/images/placeholder.png",
     desc: "Dedicated pickleball courts with professional-grade court surfaces, regulation dimensions, and proper net systems for competitive and recreational play.",
     features: ["Professional court surface", "Regulation dimensions", "Competition-grade nets", "Line markings"]
   },
   {
     title: "Volleyball Court",
-    img: "/images/volleyball.jpg",
+    img: "/images/placeholder.png",
     desc: "Full-size volleyball court with professional flooring, regulation net systems, and boundary markings — suitable for competitive training and inter-college matches.",
     features: ["Full regulation court", "Professional flooring", "Competition net system", "Spectator space"]
   },
   {
     title: "Table Tennis Hall",
-    img: "/images/table-tennis.jpg",
+    img: "/images/placeholder.png",
     desc: "Multiple competition-grade table tennis tables in a dedicated hall with controlled lighting, non-reflective flooring, and proper spacing for serious training.",
     features: ["Competition-grade tables", "Multiple playing stations", "Controlled lighting", "Anti-glare flooring"]
   },
   {
     title: "Multi-Sport Arena",
-    img: "/images/foosball.jpg",
+    img: "/images/placeholder.png",
     desc: "Dedicated recreation zone housing professional foosball tables, carrom boards, and the Astro Air Hockey Arcade — perfect for campus recreation and group activities.",
     features: ["Professional foosball", "Carrom boards", "Astro Air Hockey", "Comfortable seating"]
   },
   {
     title: "Fitness Studio",
-    img: "/images/zumba.jpg",
+    img: "/images/placeholder.png",
     desc: "A spacious, mirror-lined studio with professional flooring, high-quality sound systems, and climate control — perfect for Zumba classes and fitness programs.",
     features: ["Mirror-lined walls", "Pro sound system", "Climate controlled", "Cushioned flooring"]
   }
@@ -48,11 +48,11 @@ export default function Facilities() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img loading="lazy" 
-            src="/images/hero-real.jpg" 
+            src="/images/placeholder.png" 
             alt="Zenithh Facilities" 
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
-            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -79,7 +79,7 @@ export default function Facilities() {
                     src={facility.img}
                     alt={facility.title}
                     className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
                   />
                   {/* Gold corner accent */}
                   <span className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-[var(--color-gold-primary)] z-20 group-hover:w-16 group-hover:h-16 transition-all duration-500" />

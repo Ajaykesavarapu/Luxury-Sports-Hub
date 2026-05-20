@@ -78,17 +78,17 @@ const staggerContainer: Variants = {
 };
 
 const SPORTS_OVERVIEW = [
-  { id: "cricket", title: "Cricket", img: "/images/cricket.png" },
-  { id: "pickleball", title: "Pickleball", img: "/images/pickleball.jpg" },
-  { id: "volleyball", title: "Volleyball", img: "/images/volleyball.jpg" },
-  { id: "chess", title: "Chess", img: "/images/chess.jpg" },
-  { id: "zumba", title: "Zumba", img: "/images/zumba.jpg" },
-  { id: "table-tennis", title: "Table Tennis", img: "/images/table-tennis.jpg" },
-  { id: "foosball", title: "Foosball", img: "/images/foosball.jpg" },
-  { id: "carrom", title: "Carrom", img: "/images/carroms.jpg" },
-  { id: "air-hockey", title: "Air Hockey", img: "/images/air-hockey.jpg" },
-  { id: "vr-cricket", title: "VR Cricket", img: "/images/vr-cricket.png" },
-  { id: "badminton-outdoor", title: "Badminton", img: "/images/badminton.png" },
+  { id: "cricket", title: "Cricket", img: "/images/placeholder.png" },
+  { id: "pickleball", title: "Pickleball", img: "/images/placeholder.png" },
+  { id: "volleyball", title: "Volleyball", img: "/images/placeholder.png" },
+  { id: "chess", title: "Chess", img: "/images/placeholder.png" },
+  { id: "zumba", title: "Zumba", img: "/images/placeholder.png" },
+  { id: "table-tennis", title: "Table Tennis", img: "/images/placeholder.png" },
+  { id: "foosball", title: "Foosball", img: "/images/placeholder.png" },
+  { id: "carrom", title: "Carrom", img: "/images/placeholder.png" },
+  { id: "air-hockey", title: "Air Hockey", img: "/images/placeholder.png" },
+  { id: "vr-cricket", title: "VR Cricket", img: "/images/placeholder.png" },
+  { id: "badminton-outdoor", title: "Badminton", img: "/images/placeholder.png" },
 ];
 
 const STATS = [
@@ -110,9 +110,8 @@ const WHY_FEATURES = [
 ];
 
 const TESTIMONIALS = [
-  { text: "Zenithh's integrated sports infrastructure elevated our campus life, providing students with world-class athletic opportunities we couldn't find anywhere else in Hyderabad.", author: "Dr. Alok Verma", role: "Principal, Oakridge International School" },
-  { text: "The partnership with Zenithh Sports Arena transformed our sports curriculum. Our students are now competing at national collegiate levels thanks to this outstanding facility.", author: "Sunita Reddy", role: "Director of Sports, Ivy League Academy" },
-  { text: "State-of-the-art facilities combined with expert coaching that perfectly complements our rigorous academic standards. Zenithh is the gold standard for campus sports.", author: "Prof. Vikram Singh", role: "Dean of Student Affairs, BITS Hyderabad" }
+  { text: "Had a really good experience at Zenith Sports Arena near Miyapur Metro Station. We visited this place around 3 to 4 times along with my children and their friends, and every visit has been a pleasant experience. All of us are genuinely satisfied with the facilities, staff behavior, and the overall atmosphere of the arena. The arena offers multiple sports facilities including a big indoor cricket setup, cricket nets, volleyball courts, and pickleball courts. It is a great place for kids, families, friends, and even corporate groups. The quality of the cricket nets, mats, boundaries, and overall safety arrangements is clearly noticeable. Highly recommended for anyone looking for a safe, clean, and quality sports environment with supportive staff and excellent facilities.", author: "Prajesh Dasari", role: "Regular Visitor" },
+  { text: "Before joining Ignite Summer Camp, I didn't know how to play pickleball or many other games. After joining, I learned many rules and developed new skills. The coaches trained us really well, and I enjoyed every moment. Thanks to Ignite!", author: "Avani", role: "Ignite Summer Camp Student" }
 ];
 
 const Counter = ({ to }: { to: string }) => <span>{to}</span>;
@@ -237,18 +236,8 @@ export default function Home() {
 
       {/* ═══ HERO ═══ */}
       <section id="home" ref={heroContentRef} className="hero-section relative min-h-[100vh] w-full flex items-center pt-[80px] pb-[40px] px-6 md:px-[80px] overflow-hidden">
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
-        </video>
-
-        {/* Stronger left-side shade to elevate text across the video */}
+        {/* Decorative background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#05070d] via-[#0c0f17] to-[#161c29] z-0" />
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
         
         <div className="container mx-auto relative z-10 flex flex-col items-start text-left">
@@ -256,30 +245,29 @@ export default function Home() {
             {/* Subtitle */}
             <span
               ref={heroEyebrowRef}
-              className="hero-eyebrow text-[#D4A017] font-bold tracking-[0.3em] uppercase mb-4 block text-[11px]"
+              className="hero-eyebrow text-[#D4A017] font-bold tracking-[0.15em] sm:tracking-[0.3em] uppercase mb-4 block text-[9px] sm:text-[11px]"
             >
               ZENITHH SPORTS ARENA — WHERE LIMITS END, CHAMPIONS BEGIN
             </span>
 
             {/* Main Title Heading */}
             <div ref={heroTitleRef} className="mb-4">
-              <h1 className="hero-heading text-4xl md:text-5xl font-black uppercase tracking-[0.15em] leading-[1.4] text-white">
-                <span className="word inline-block">ELITE</span> <span className="word inline-block italic text-[#D4A017]">SPORTS</span><br />
-                <span className="word inline-block">ACADEMY</span> <span className="word inline-block">HYDERABAD</span>
+              <h1 className="hero-heading text-[clamp(1.6rem,5vw,3.2rem)] font-black uppercase tracking-[0.05em] sm:tracking-[0.15em] leading-[1.3] text-white">
+                ELITE <span className="text-[#D4A017] italic">SPORTS</span> ACADEMY HYDERABAD
               </h1>
             </div>
 
             {/* Description */}
-            <p className="hero-desc hero-subtitle text-lg md:text-[18px] text-white/80 mb-4 max-w-[560px] font-light leading-[1.7]">
+            <p className="hero-desc hero-subtitle text-sm sm:text-base md:text-[18px] text-white/80 mb-4 max-w-[560px] font-light leading-[1.6] sm:leading-[1.7]">
               Hyderabad's premier multi-sport training facility — combining world-class coaching, professional infrastructure, and 9 sports disciplines under one roof.
             </p>
 
             {/* Sport Tags Staggered */}
-            <div className="sports-tags flex flex-wrap justify-start gap-x-6 gap-y-3 mb-8 text-[13px] tracking-[0.05em]">
+            <div className="sports-tags flex flex-wrap justify-start gap-x-3 sm:gap-x-6 gap-y-2 sm:gap-y-3 mb-6 sm:mb-8 text-[10px] sm:text-[13px] tracking-[0.05em]">
               {["Cricket", "Pickleball", "Volleyball", "Chess", "Zumba", "Table Tennis", "Foosball", "Carrom", "Air Hockey", "VR Cricket", "Badminton"].map((sport) => (
                 <span
                   key={sport}
-                  className="sport-tag text-white/50 font-bold uppercase tracking-[0.2em] hover:text-[var(--color-gold-bright)] hover:translate-y-[-2px] transition-all cursor-pointer"
+                  className="sport-tag text-white/50 font-bold uppercase tracking-[0.1em] sm:tracking-[0.2em] hover:text-[var(--color-gold-bright)] hover:translate-y-[-2px] transition-all cursor-pointer"
                 >
                   {sport}
                 </span>
@@ -324,7 +312,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-2/5">
               <div className="premium-image-hover aspect-video md:aspect-[4/3] border border-[var(--color-gold-primary)]/30">
-                <img loading="lazy" src="/images/msk_cricket_academy.png" alt="MSK Cricket Academy" className="w-full h-full object-cover object-top" />
+                <img loading="lazy" src="/images/placeholder.png" alt="MSK Cricket Academy" className="w-full h-full object-cover object-top" />
               </div>
             </div>
           </motion.div>
@@ -352,7 +340,7 @@ export default function Home() {
                   <img
                     src={sport.img}
                     alt={sport.title}
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
                   />
                   <div className="sport-card-overlay">
                     <span className="sport-card-name">{sport.title}</span>
@@ -369,7 +357,7 @@ export default function Home() {
                   <img
                     src={sport.img}
                     alt={sport.title}
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
                   />
                   <div className="sport-card-overlay">
                     <span className="sport-card-name">{sport.title}</span>
@@ -428,6 +416,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══ HIGH PERFORMANCE SHOWCASE (SEO & H3 HIERARCHY) ═══ */}
+      <section className="py-24 bg-[var(--bg-secondary)] relative overflow-hidden border-b border-[var(--border-light)]">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-[var(--color-gold-primary)] font-black tracking-[0.4em] uppercase text-xs mb-4 block">Our Training Ecosystem</span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase text-[var(--text-primary)]">
+              HIGH-PERFORMANCE <span className="text-[var(--color-gold-primary)] italic">SPORTS PROGRAMS</span>
+            </h2>
+            <div className="section-title-line h-[1px] bg-gradient-to-r from-transparent via-[var(--color-gold-primary)] to-transparent w-48 mx-auto mt-6" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 bg-[var(--bg-card)] border border-[var(--border-light)] hover:border-[var(--color-gold-primary)]/40 transition-all duration-300 rounded-lg">
+              <span className="text-4xl mb-6 block">🏏</span>
+              <h3 className="text-lg font-black uppercase tracking-wider text-[var(--text-primary)] mb-4">Elite Youth Academy Coaching</h3>
+              <p className="text-[var(--text-muted)] text-sm font-light leading-relaxed">
+                Our flagship youth developmental sports programs are structured to take athletes from beginner level to competitive state and national levels. With specialized, international-standard coaching curriculums for Cricket, Volleyball, and Chess, we prioritize motor-skill advancement, physical conditioning, and structural discipline.
+              </p>
+            </div>
+
+            <div className="p-8 bg-[var(--bg-card)] border border-[var(--border-light)] hover:border-[var(--color-gold-primary)]/40 transition-all duration-300 rounded-lg">
+              <span className="text-4xl mb-6 block">🏸</span>
+              <h3 className="text-lg font-black uppercase tracking-wider text-[var(--text-primary)] mb-4">Professional Multi-Sport Facilities</h3>
+              <p className="text-[var(--text-muted)] text-sm font-light leading-relaxed">
+                Enjoy premium sports bookings at Miyapur's best-equipped arena. Featuring high-grade indoor cricket nets, professional pickleball courts with premium synthetic mats, tournament-standard volleyball courts, and leisure zones for table tennis, carrom, and air hockey. Perfect for daily practice and corporate sports leagues.
+              </p>
+            </div>
+
+            <div className="p-8 bg-[var(--bg-card)] border border-[var(--border-light)] hover:border-[var(--color-gold-primary)]/40 transition-all duration-300 rounded-lg">
+              <span className="text-4xl mb-6 block">🏢</span>
+              <h3 className="text-lg font-black uppercase tracking-wider text-[var(--text-primary)] mb-4">Corporate Sports & Event Hosting</h3>
+              <p className="text-[var(--text-muted)] text-sm font-light leading-relaxed">
+                We organize comprehensive corporate sports tournaments, high-performance coaching camps, and community tournaments. Partner with us to customize packages for corporate leagues, school sports events, facility tours, and weekend high-intensity workout and sports training sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ WHY ZENITHH (ABOUT) ═══ */}
       <section id="about" className="py-20 bg-[var(--bg-primary)] overflow-hidden">
         <div className="container mx-auto px-6">
@@ -468,7 +495,7 @@ export default function Home() {
             <div className="w-full lg:w-2/5 order-1 lg:order-2 relative group">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-[var(--border-medium)] bg-[var(--bg-card)]">
                 <img
-                  src="/images/about-arena.jpg"
+                  src="/images/placeholder.png"
                   alt="Zenithh Sports Arena Facilities"
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 hover:scale-105"
                 />
@@ -486,14 +513,14 @@ export default function Home() {
 
 
       {/* ═══ TESTIMONIALS ═══ */}
-      <section className="py-32 bg-[var(--bg-secondary)] relative overflow-hidden border-y border-[var(--border-light)]">
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-16 sm:py-24 md:py-32 bg-[var(--bg-secondary)] relative overflow-hidden border-y border-[var(--border-light)]">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-2xl md:text-4xl font-black uppercase mb-20 text-[var(--text-primary)] tracking-[0.2em]">
-              PARTNER <span className="text-[var(--color-gold-primary)] italic">VOICES</span>
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-black uppercase mb-10 sm:mb-16 md:mb-20 text-[var(--text-primary)] tracking-[0.1em] sm:tracking-[0.2em]">
+              WHAT OUR <span className="text-[var(--color-gold-primary)] italic">COMMUNITY SAYS</span>
             </h2>
 
-            <div className="relative min-h-[300px]">
+            <div className="relative min-h-[550px] sm:min-h-[350px] md:min-h-[300px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTestimonial}
@@ -501,36 +528,38 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  className="absolute inset-0 flex flex-col items-center"
+                  className="absolute inset-0 flex flex-col items-center overflow-y-auto"
                 >
-                  <p className="text-2xl md:text-4xl font-light italic leading-tight mb-12 text-[var(--text-primary)] max-w-4xl">
-                    "{TESTIMONIALS[activeTestimonial].text}"
-                  </p>
-                  <div className="flex flex-col items-center">
-                    <h4 className="font-black uppercase text-lg tracking-[0.2em] text-[var(--text-primary)]">{TESTIMONIALS[activeTestimonial].author}</h4>
-                    <p className="text-[var(--color-gold-primary)] uppercase text-[10px] font-bold tracking-[0.4em] mt-2 opacity-60">{TESTIMONIALS[activeTestimonial].role}</p>
+                  <div className="flex-1 flex items-start justify-center">
+                    <p className="text-sm sm:text-lg md:text-xl lg:text-2xl font-light italic leading-relaxed sm:leading-relaxed mb-8 sm:mb-12 text-[var(--text-primary)] max-w-4xl px-2">
+                      "{TESTIMONIALS[activeTestimonial].text}"
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center flex-shrink-0 mt-auto">
+                    <h4 className="font-black uppercase text-sm sm:text-lg tracking-[0.1em] sm:tracking-[0.2em] text-[var(--text-primary)]">{TESTIMONIALS[activeTestimonial].author}</h4>
+                    <p className="text-[var(--color-gold-primary)] uppercase text-[9px] sm:text-[10px] font-bold tracking-[0.2em] sm:tracking-[0.4em] mt-2 opacity-60">{TESTIMONIALS[activeTestimonial].role}</p>
                   </div>
                 </motion.div>
               </AnimatePresence>
             </div>
 
-            <div className="flex justify-center gap-8 mt-24">
+            <div className="flex justify-center gap-6 sm:gap-8 mt-16 sm:mt-24">
               <button
                 onClick={() => setActiveTestimonial((prev) => (prev === 0 ? TESTIMONIALS.length - 1 : prev - 1))}
                 className="text-[var(--text-primary)]/20 hover:text-[var(--color-gold-primary)] transition-colors"
               >
-                <ChevronLeft size={32} />
+                <ChevronLeft size={28} />
               </button>
               <div className="flex items-center gap-3">
                 {TESTIMONIALS.map((_, i) => (
-                  <button key={i} onClick={() => setActiveTestimonial(i)} className={`h-[2px] transition-all duration-500 ${i === activeTestimonial ? 'bg-[var(--color-gold-primary)] w-12' : 'bg-[var(--text-primary)]/10 w-6'}`} />
+                  <button key={i} onClick={() => setActiveTestimonial(i)} className={`h-[2px] transition-all duration-500 ${i === activeTestimonial ? 'bg-[var(--color-gold-primary)] w-10 sm:w-12' : 'bg-[var(--text-primary)]/10 w-5 sm:w-6'}`} />
                 ))}
               </div>
               <button
                 onClick={() => setActiveTestimonial((prev) => (prev === TESTIMONIALS.length - 1 ? 0 : prev + 1))}
                 className="text-[var(--text-primary)]/20 hover:text-[var(--color-gold-primary)] transition-colors"
               >
-                <ChevronRight size={32} />
+                <ChevronRight size={28} />
               </button>
             </div>
           </div>

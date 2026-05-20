@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="footer-branding">
           <Link to="/">
             <img loading="lazy" 
-              src="/images/logo_final.jpeg" 
+              src="/images/placeholder.png" 
               alt="Zenithh Sports Arena" 
               className="footer-logo logo-glow" 
             />
@@ -71,7 +71,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[var(--color-gold-primary)] transition-colors"
             >
-              Zenithh Sports Arena, Hyderabad, Telangana
+              Miyapur Metro Station Road, Miyapur, Hyderabad, Telangana 500049
             </a>
           </p>
           <p className="footer-info-text flex flex-col gap-1">

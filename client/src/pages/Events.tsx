@@ -9,7 +9,7 @@ const UPCOMING_EVENTS = [
     date: "TBA",
     sport: "All",
     desc: "Exciting new tournaments and camps are currently being planned. Stay tuned for new updates!",
-    img: "/images/events-hero.jpg",
+    img: "/images/placeholder.png",
     badge: "Coming Soon"
   }
 ];
@@ -23,7 +23,7 @@ export default function Events() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img loading="lazy" 
-            src="/images/events-hero.jpg" 
+            src="/images/placeholder.png" 
             alt="Zenithh Events" 
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
@@ -53,7 +53,7 @@ export default function Events() {
                     src={event.img}
                     alt={event.title}
                     className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
                   />
                   <div className="absolute top-4 left-4 flex flex-col gap-2">
                     <span className="bg-[var(--bg-inverse)] text-[var(--text-inverse)] text-[9px] font-black uppercase tracking-[0.2em] px-3 py-1.5">{event.type}</span>

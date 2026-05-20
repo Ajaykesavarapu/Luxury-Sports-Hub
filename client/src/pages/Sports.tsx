@@ -19,7 +19,7 @@ const SPORTS = [
   {
     id: "cricket",
     title: "Cricket",
-    img: "/images/cricket.png",
+    img: "/images/placeholder.png",
     tagline: "The Home of Elite Cricket Coaching in Hyderabad",
     description: "Cricket is more than just a sport in India — it is a passion and a life-defining dream. At Zenithh Sports Arena, we channel that passion into precision performance. Our professional net facilities and structured performance pathways transform every aspiring cricketer into a confident, competition-ready athlete.",
     features: [
@@ -40,7 +40,7 @@ const SPORTS = [
   {
     id: "pickleball",
     title: "Pickleball",
-    img: "/images/pickleball.jpg",
+    img: "/images/placeholder.png",
     tagline: "The Fastest Growing Sport in Hyderabad",
     description: "A dynamic sport brilliantly blending tennis, badminton, and table tennis — played on a badminton-sized court with a solid paddle and a perforated plastic ball. At Zenithh Sports Arena, we have built one of Hyderabad's premier pickleball training facilities to meet the rapidly growing demand for professional coaching.",
     features: [
@@ -61,7 +61,7 @@ const SPORTS = [
   {
     id: "volleyball",
     title: "Volleyball",
-    img: "/images/volleyball.jpg",
+    img: "/images/placeholder.png",
     tagline: "Build Your Volleyball Game with Zenithh",
     description: "Volleyball demands explosive athleticism, razor-sharp reflexes, and seamless teamwork. At Zenithh Sports Arena Hyderabad, our volleyball training program develops all these qualities — from grassroots beginners to competitive players targeting district and state representation.",
     features: [
@@ -82,7 +82,7 @@ const SPORTS = [
   {
     id: "chess",
     title: "Chess",
-    img: "/images/chess.jpg",
+    img: "/images/placeholder.png",
     tagline: "Develop Strategic Brilliance at Zenithh",
     description: "Chess is the ultimate test of strategic thinking, patience, and mental discipline. At Zenithh Sports Arena, our chess program develops cognitive excellence — from opening theory and tactical patterns to endgame mastery — helping students compete at scholastic, collegiate, and competitive levels.",
     features: [
@@ -103,7 +103,7 @@ const SPORTS = [
   {
     id: "zumba",
     title: "Zumba",
-    img: "/images/zumba.jpg",
+    img: "/images/placeholder.png",
     tagline: "Dance, Fitness & Energy — All in One",
     description: "Zumba at Zenithh Sports Arena is where fitness meets dance in the most energizing way possible. Our certified Zumba instructors combine Latin-inspired dance rhythms with aerobic exercise principles to deliver high-energy sessions that improve fitness, coordination, and mental well-being.",
     features: [
@@ -124,7 +124,7 @@ const SPORTS = [
   {
     id: "table-tennis",
     title: "Table Tennis",
-    img: "/images/table-tennis.jpg",
+    img: "/images/placeholder.png",
     tagline: "Precision, Speed & Reflexes Perfected",
     description: "Table Tennis at Zenithh Sports Arena is coached to a high competitive standard. Our professional tables, certified coaches, and structured training methodology develop players who can compete from club level all the way to collegiate and state competitions.",
     features: [
@@ -145,7 +145,7 @@ const SPORTS = [
   {
     id: "foosball",
     title: "Foosball",
-    img: "/images/foosball.jpg",
+    img: "/images/placeholder.png",
     tagline: "Competitive Table Football at Its Best",
     description: "Foosball (table football) at Zenithh Sports Arena goes beyond casual recreation. We coach the technical skills, strategic thinking, and reflexive control that competitive foosball demands — making it a serious sport within our multi-sport facility.",
     features: [
@@ -166,7 +166,7 @@ const SPORTS = [
   {
     id: "carrom",
     title: "Carrom",
-    img: "/images/carroms.jpg",
+    img: "/images/placeholder.png",
     tagline: "Master India's Beloved Board Sport",
     description: "Carrom is one of India's most beloved traditional sports — a game of precision, angles, and strategic thinking. At Zenithh Sports Arena, our carrom program provides professional coaching on competition-grade boards, helping players develop the accuracy, technique, and tactical awareness needed for high-level competitive play.",
     features: [
@@ -187,7 +187,7 @@ const SPORTS = [
   {
     id: "air-hockey",
     title: "Astro Air Hockey Arcade",
-    img: "/images/air-hockey.jpg",
+    img: "/images/placeholder.png",
     tagline: "Lightning Reflexes. Unstoppable Action.",
     description: "Zenithh Sports Arena's Astro Air Hockey Arcade brings one of the most thrilling arcade sports experiences to Hyderabad. Fast-paced, reflex-driven, and endlessly competitive — our air hockey setup provides the ultimate recreational sports experience alongside our elite training programs.",
     features: [
@@ -207,7 +207,7 @@ const SPORTS = [
   {
     id: "vr-cricket",
     title: "VR Cricket",
-    img: "/images/vr-cricket.png",
+    img: "/images/placeholder.png",
     tagline: "Immersive Virtual Reality Cricket Experience",
     description: "Step into the ultimate virtual reality cricket experience at Zenithh Sports Arena. Face international-level pacers and spinners in hyper-realistic stadiums using state-of-the-art VR technology. Perfect for honing your reflexes, shot selection, and match awareness in a fully controlled digital environment.",
     features: [
@@ -227,7 +227,7 @@ const SPORTS = [
   {
     id: "badminton-outdoor",
     title: "Badminton Outdoor",
-    img: "/images/badminton.png",
+    img: "/images/placeholder.png",
     tagline: "High-Energy Outdoor Badminton Action",
     description: "Experience the thrill of outdoor badminton at Zenithh Sports Arena. Specifically designed for all-weather recreational and competitive play, our outdoor badminton courts offer an exhilarating environment to improve fitness, agility, and racquet skills under the open sky.",
     features: [
@@ -254,7 +254,7 @@ export default function SportsPage() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img loading="lazy" 
-            src="/images/hero-real.jpg" 
+            src="/images/placeholder.png" 
             alt="Zenithh Sports Arena" 
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
@@ -315,7 +315,7 @@ export default function SportsPage() {
                   to={`/sports/${sport.id}`}
                   className="premium-image-hover group relative aspect-square overflow-hidden cursor-pointer border border-[var(--border-light)] transition-all duration-500 block hover:border-primary/50"
                 >
-                  <img loading="lazy" src={sport.img} alt={sport.title} className="w-full h-full object-cover" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }} />
+                  <img loading="lazy" src={sport.img} alt={sport.title} className="w-full h-full object-cover" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 p-6 flex flex-col justify-end">
                     <h3 className="text-[var(--text-primary)] font-black uppercase text-xs md:text-sm tracking-[0.2em] group-hover:text-primary transition-colors leading-tight">{sport.title}</h3>
@@ -349,7 +349,7 @@ export default function SportsPage() {
                     src={sport.img}
                     alt={sport.title}
                     className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
                   />
                   <div className="absolute top-6 left-6 bg-primary text-[var(--text-inverse)] text-[10px] font-black uppercase tracking-[0.3em] px-4 py-2">
                     {sport.title}
