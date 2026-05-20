@@ -176,6 +176,25 @@ export default function Home() {
           ease: "expo.out",
           delay: 1.5
         });
+
+        // Stats counter animation
+        const statNumbers = document.querySelectorAll(".stat-number");
+        statNumbers.forEach((stat) => {
+          const target = parseInt(stat.getAttribute("data-target") || "0", 10);
+          gsap.fromTo(stat,
+            { innerText: "0" },
+            {
+              innerText: target,
+              duration: 2,
+              snap: { innerText: 1 },
+              scrollTrigger: {
+                trigger: stat,
+                start: "top 85%",
+                toggleActions: "play none none none"
+              }
+            }
+          );
+        });
       }, heroContentRef);
     }
 
@@ -268,11 +287,11 @@ export default function Home() {
             </div>
 
             {/* Hero Buttons */}
-            <div className="hero-buttons flex items-center gap-[20px] flex-nowrap">
-              <Link to="/contact" className="btn-primary">
+            <div className="hero-buttons flex flex-col sm:flex-row items-stretch sm:items-center gap-[20px]">
+              <Link to="/contact" className="btn-primary text-center justify-center">
                 BOOK A TRIAL SESSION
               </Link>
-              <Link to="/sports" className="btn-secondary">
+              <Link to="/sports" className="btn-secondary text-center justify-center">
                 EXPLORE SPORTS
               </Link>
             </div>

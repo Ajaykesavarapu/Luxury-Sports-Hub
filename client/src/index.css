@@ -135,6 +135,18 @@
     padding: 0 80px;
   }
 
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -424,8 +436,9 @@
   #main-navbar {
     position: fixed;
     top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 99999;
     width: calc(100vw - 80px);
     max-width: 1380px;
@@ -440,6 +453,21 @@
     padding: 0 40px;
     /* Increased padding */
     transition: all 0.4s ease;
+  }
+
+  @media (max-width: 1024px) {
+    #main-navbar {
+      width: calc(100vw - 40px);
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #main-navbar {
+      width: calc(100vw - 24px);
+      padding: 0 16px;
+      gap: 12px;
+    }
   }
 
   #main-navbar.scrolled {
@@ -652,6 +680,22 @@
     padding: 0 40px;
   }
 
+  @media (max-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 0 16px;
+    }
+  }
+
   .footer-logo {
     height: 70px;
     width: auto;
@@ -754,6 +798,15 @@
     letter-spacing: 0.5px;
   }
 
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+      padding: 20px 20px 0;
+    }
+  }
+
   .btn-register::before {
     content: '';
     position: absolute;
@@ -788,6 +841,26 @@
     box-sizing: border-box;
   }
 
+  @media (max-width: 1024px) {
+    #home,
+    .hero-section {
+      padding-top: 120px !important;
+      padding-bottom: 60px !important;
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #home,
+    .hero-section {
+      padding-top: 100px !important;
+      padding-bottom: 40px !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+
   .hero-content {
     max-width: 780px;
     text-align: left;
@@ -799,6 +872,18 @@
   .sports-section {
     padding: 100px 80px;
     background: var(--bg-primary);
+  }
+
+  @media (max-width: 1024px) {
+    .sports-section {
+      padding: 60px 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sports-section {
+      padding: 40px 20px;
+    }
   }
 
   .sports-grid-wrapper {
@@ -819,6 +904,33 @@
     gap: 16px;
     max-width: calc((100% / 6 * 5) + (16px * 4));
     margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .sports-row-1,
+    .sports-row-2 {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sports-row-1,
+    .sports-row-2 {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sports-row-1,
+    .sports-row-2 {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
   }
 
   .sport-card {

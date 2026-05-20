@@ -30,7 +30,7 @@ export default function Navbar() {
     if (navbarRef.current) {
       gsap.fromTo(navbarRef.current,
         { y: -80, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.1, ease: 'expo.out', delay: 0.3 }
+        { y: 0, opacity: 1, duration: 1.1, ease: 'expo.out', delay: 0.3, clearProps: "transform" }
       );
     }
 
