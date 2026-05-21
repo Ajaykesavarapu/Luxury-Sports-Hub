@@ -3,7 +3,7 @@
     "target": "es2020",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "dist/api",
+    "outDir": "build/api",
     "rootDir": "api",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
