@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="footer-branding">
           <Link to="/">
             <img loading="lazy" 
-              src="/images/placeholder.png" 
+              src="/images/logo_final.jpeg" 
               alt="Zenithh Sports Arena" 
               className="footer-logo logo-glow" 
             />

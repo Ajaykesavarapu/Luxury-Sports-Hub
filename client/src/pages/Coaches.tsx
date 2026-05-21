@@ -35,7 +35,7 @@ export default function Coaches() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/placeholder.png" 
+            src="/images/about-arena.jpg" 
             alt="Zenithh Coaching Team" 
             className="w-full h-full object-cover object-center"
             style={{ filter: 'brightness(0.3)' }}

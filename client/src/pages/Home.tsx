@@ -78,17 +78,17 @@ const staggerContainer: Variants = {
 };
 
 const SPORTS_OVERVIEW = [
-  { id: "cricket", title: "Cricket", img: "/images/placeholder.png" },
-  { id: "pickleball", title: "Pickleball", img: "/images/placeholder.png" },
-  { id: "volleyball", title: "Volleyball", img: "/images/placeholder.png" },
-  { id: "chess", title: "Chess", img: "/images/placeholder.png" },
-  { id: "zumba", title: "Zumba", img: "/images/placeholder.png" },
-  { id: "table-tennis", title: "Table Tennis", img: "/images/placeholder.png" },
-  { id: "foosball", title: "Foosball", img: "/images/placeholder.png" },
-  { id: "carrom", title: "Carrom", img: "/images/placeholder.png" },
-  { id: "air-hockey", title: "Air Hockey", img: "/images/placeholder.png" },
-  { id: "vr-cricket", title: "VR Cricket", img: "/images/placeholder.png" },
-  { id: "badminton-outdoor", title: "Badminton", img: "/images/placeholder.png" },
+  { id: "cricket", title: "Cricket", img: "/images/cricket.png" },
+  { id: "pickleball", title: "Pickleball", img: "/images/pickleball.jpg" },
+  { id: "volleyball", title: "Volleyball", img: "/images/volleyball.jpg" },
+  { id: "chess", title: "Chess", img: "/images/chess.jpg" },
+  { id: "zumba", title: "Zumba", img: "/images/zumba.jpg" },
+  { id: "table-tennis", title: "Table Tennis", img: "/images/table-tennis.jpg" },
+  { id: "foosball", title: "Foosball", img: "/images/foosball.jpg" },
+  { id: "carrom", title: "Carrom", img: "/images/carroms.jpg" },
+  { id: "air-hockey", title: "Air Hockey", img: "/images/air-hockey.jpg" },
+  { id: "vr-cricket", title: "VR Cricket", img: "/images/vr-cricket.png" },
+  { id: "badminton-outdoor", title: "Badminton", img: "/images/badminton.png" },
 ];
 
 const STATS = [
@@ -236,8 +236,18 @@ export default function Home() {
 
       {/* ═══ HERO ═══ */}
       <section id="home" ref={heroContentRef} className="hero-section relative min-h-[100vh] w-full flex items-center pt-[80px] pb-[40px] px-6 md:px-[80px] overflow-hidden">
-        {/* Decorative background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#05070d] via-[#0c0f17] to-[#161c29] z-0" />
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="/videos/hero-background.mp4" type="video/mp4" />
+        </video>
+
+        {/* Stronger left-side shade to elevate text across the video */}
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
         
         <div className="container mx-auto relative z-10 flex flex-col items-start text-left">
@@ -312,7 +322,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-2/5">
               <div className="premium-image-hover aspect-video md:aspect-[4/3] border border-[var(--color-gold-primary)]/30">
-                <img loading="lazy" src="/images/placeholder.png" alt="MSK Cricket Academy" className="w-full h-full object-cover object-top" />
+                <img loading="lazy" src="/images/msk_cricket_academy.png" alt="MSK Cricket Academy" className="w-full h-full object-cover object-top" />
               </div>
             </div>
           </motion.div>
@@ -340,7 +350,7 @@ export default function Home() {
                   <img
                     src={sport.img}
                     alt={sport.title}
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
                   />
                   <div className="sport-card-overlay">
                     <span className="sport-card-name">{sport.title}</span>
@@ -357,7 +367,7 @@ export default function Home() {
                   <img
                     src={sport.img}
                     alt={sport.title}
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/gallery-hero.jpg'; }}
                   />
                   <div className="sport-card-overlay">
                     <span className="sport-card-name">{sport.title}</span>
@@ -495,7 +505,7 @@ export default function Home() {
             <div className="w-full lg:w-2/5 order-1 lg:order-2 relative group">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-[var(--border-medium)] bg-[var(--bg-card)]">
                 <img
-                  src="/images/placeholder.png"
+                  src="/images/about-arena.jpg"
                   alt="Zenithh Sports Arena Facilities"
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 hover:scale-105"
                 />
@@ -520,7 +530,7 @@ export default function Home() {
               WHAT OUR <span className="text-[var(--color-gold-primary)] italic">COMMUNITY SAYS</span>
             </h2>
 
-            <div className="relative min-h-[550px] sm:min-h-[350px] md:min-h-[300px]">
+            <div className="relative min-h-[400px] sm:min-h-[350px] md:min-h-[300px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeTestimonial}

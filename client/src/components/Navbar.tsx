@@ -54,7 +54,7 @@ export default function Navbar() {
       {/* LEFT: Logo */}
       <Link to="/" className="navbar-logo-link">
         <img
-          src="/images/placeholder.png"
+          src="/images/logo_final.jpeg"
           alt="Zenithh Sports Arena"
           className="navbar-logo"
         />

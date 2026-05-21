@@ -11,7 +11,7 @@ const SPORT_DETAILS: Record<string, any> = {
   "cricket": {
     title: "Cricket",
     subtitle: "Premium Cricket Nets & Coaching",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/cricket.png",
     description: "Experience world-class cricket training at Zenithh Sports Arena. Our facility features professional-grade nets, high-speed bowling machines, and expert coaching designed to refine your technique and elevate your game to the next level.",
     features: [
       "Professional-grade artificial turf pitches",
@@ -21,12 +21,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "BCCI Certified Level 2 Coaches",
-    gallery: ["/images/placeholder.png"]
+    gallery: ["/images/cricket.png"]
   },
   "pickleball": {
     title: "Pickleball",
     subtitle: "Elite Pickleball Courts",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/pickleball.jpg",
     description: "Join the fastest growing sport in the world on our premium pickleball courts. Whether you are a beginner looking to learn the basics or an advanced player seeking competitive matches, our courts offer the perfect environment.",
     features: [
       "Tournament-standard court dimensions and netting",
@@ -36,12 +36,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Professional Pickleball Instructors",
-    gallery: ["/images/placeholder.png", "/images/placeholder.png"]
+    gallery: ["/images/pickleball.jpg"]
   },
   "volleyball": {
     title: "Volleyball",
     subtitle: "Professional Volleyball Arena",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/volleyball.jpg",
     description: "Spike, set, and serve in our state-of-the-art volleyball arena. Designed to international standards, our courts are perfect for rigorous training sessions, casual games, and competitive leagues.",
     features: [
       "FIVB standard net systems and antennas",
@@ -51,19 +51,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "National Level Volleyball Coaches",
-    gallery: [
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png"
-    ]
+    gallery: ["/images/volleyball.jpg"]
   },
   "chess": {
     title: "Chess",
     subtitle: "Strategic Chess Academy",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/chess.jpg",
     description: "Sharpen your mind and master strategy at the Zenithh Chess Academy. We provide a quiet, focused environment with expert guidance to help players of all ages develop critical thinking and tactical brilliance.",
     features: [
       "FIDE standard chess boards and tournament clocks",
@@ -73,12 +66,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "FIDE Rated Masters",
-    gallery: ["/images/placeholder.png", "/images/placeholder.png"]
+    gallery: ["/images/chess.jpg"]
   },
   "zumba": {
     title: "Zumba",
     subtitle: "Zumba & Fitness Studio",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/zumba.jpg",
     description: "Dance your way to fitness in our high-energy Zumba studio. Our certified instructors combine Latin and international music with dance moves for an exhilarating, effective workout.",
     features: [
       "Spacious studio with sprung wooden flooring",
@@ -88,12 +81,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Certified Zumba Instructors",
-    gallery: ["/images/placeholder.png", "/images/placeholder.png", "/images/placeholder.png"]
+    gallery: ["/images/zumba.jpg"]
   },
   "table-tennis": {
     title: "Table Tennis",
     subtitle: "Table Tennis Championship Hall",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/table-tennis.jpg",
     description: "Experience lightning-fast rallies on our ITTF-approved table tennis setups. Perfect your spin, speed, and agility in our dedicated indoor championship hall.",
     features: [
       "ITTF approved competition tables",
@@ -103,18 +96,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "State Level Table Tennis Champions",
-    gallery: [
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png"
-    ]
+    gallery: ["/images/table-tennis.jpg"]
   },
   "foosball": {
     title: "Foosball",
     subtitle: "Foosball & Gaming Lounge",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/foosball.jpg",
     description: "Take a break or challenge your friends in our dedicated foosball and recreation lounge. Featuring tournament-grade tables, it's the perfect place to unwind and test your reflexes.",
     features: [
       "Tournament-grade ITSF approved tables",
@@ -124,19 +111,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Recreational Supervisors",
-    gallery: [
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png",
-      "/images/placeholder.png"
-    ]
+    gallery: ["/images/foosball.jpg"]
   },
   "carrom": {
     title: "Carrom",
     subtitle: "Carrom Training Center",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/carroms.jpg",
     description: "Master precision and focus at our specialized carrom center. Our smooth, championship-quality boards provide the ideal surface for players looking to perfect their striking techniques.",
     features: [
       "Championship quality smooth boards",
@@ -146,12 +126,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Experienced Carrom Professionals",
-    gallery: ["/images/placeholder.png", "/images/placeholder.png", "/images/placeholder.png"]
+    gallery: ["/images/carroms.jpg"]
   },
   "air-hockey": {
     title: "Air Hockey",
     subtitle: "Arcade Zone - Air Hockey",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/air-hockey.jpg",
     description: "Feel the rush of high-speed arcade action with our premium air hockey tables. Featuring powerful airflow and electronic scoring, it's an exciting addition to your recreational time at Zenithh.",
     features: [
       "Commercial-grade air hockey tables",
@@ -161,12 +141,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Recreational Supervisors",
-    gallery: ["/images/placeholder.png", "/images/placeholder.png"]
+    gallery: ["/images/air-hockey.jpg"]
   },
   "vr-cricket": {
     title: "VR Cricket",
     subtitle: "Immersive Virtual Reality Cricket",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/vr-cricket.png",
     description: "Step into the ultimate virtual reality cricket experience at Zenithh Sports Arena. Face international-level pacers and spinners in hyper-realistic stadiums using state-of-the-art VR technology. Perfect for honing your reflexes, shot selection, and match awareness in a fully controlled digital environment.",
     features: [
       "Hyper-realistic VR cricket simulation technology",
@@ -178,12 +158,12 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "VR Training Specialists",
-    gallery: ["/images/placeholder.png"]
+    gallery: ["/images/vr-cricket.png"]
   },
   "badminton-outdoor": {
     title: "Badminton Outdoor",
     subtitle: "High-Energy Outdoor Badminton",
-    heroImage: "/images/placeholder.png",
+    heroImage: "/images/badminton.png",
     description: "Experience the thrill of outdoor badminton at Zenithh Sports Arena. Specifically designed for all-weather recreational and competitive play, our outdoor badminton courts offer an exhilarating environment to improve fitness, agility, and racquet skills under the open sky.",
     features: [
       "Premium outdoor all-weather surfaces",
@@ -195,7 +175,7 @@ const SPORT_DETAILS: Record<string, any> = {
     ],
     schedule: "Morning: 7 AM – 10 AM, Evening: 5 PM – 8 PM",
     coaches: "Certified Badminton Coaches",
-    gallery: ["/images/placeholder.png"]
+    gallery: ["/images/badminton.png"]
   }
 };
 
@@ -241,7 +221,7 @@ export default function SportDetail() {
             src={sport.heroImage}
             alt={sport.title}
             className="w-full h-full object-cover object-center"
-            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
+            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/about-arena.jpg'; }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)] via-[var(--bg-primary)]/60 to-transparent z-10" />
         </div>
@@ -361,7 +341,7 @@ export default function SportDetail() {
                     src={img} 
                     alt={`${sport.title} Gallery ${idx + 1}`} 
                     className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/about-arena.jpg'; }}
                   />
                 </motion.div>
               ))}

@@ -112,11 +112,11 @@ export default function Contact() {
       <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden bg-grain">
         <div className="absolute inset-0 z-0">
           <img loading="lazy" 
-            src="/images/placeholder.png" 
+            src="/images/about-arena.jpg" 
             alt="Contact Zenithh" 
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
-            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/placeholder.png'; }}
+            onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/about-arena.jpg'; }}
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>

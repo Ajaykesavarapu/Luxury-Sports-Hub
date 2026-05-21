@@ -1,0 +1,350 @@
+Build a fully responsive luxury premium sports website for a brand named ZENITHH.
+This website is created as a demo presentation by AS KREATIV to impress a client.
+The design must feel elite, powerful, modern, and premium, similar to high-end sports brands.
+
+⚠️ Important Design Rule:
+Do NOT use any shade or variant of blue anywhere in the website.
+Use only premium luxury colors.
+
+🎨 DESIGN STYLE REQUIREMENTS
+
+Use a Luxury Sports Theme
+
+Primary Colors:
+
+Deep Black (#0D0D0D)
+Charcoal (#1A1A1A)
+Gold (#C9A227)
+Crimson Red (#8B0000)
+White (#FFFFFF)
+Dark Grey (#2B2B2B)
+
+⚠️ Strictly avoid:
+
+Blue
+Light Blue
+Cyan
+Navy
+Teal
+
+Typography:
+
+Headings: Poppins / Montserrat Bold
+Body: Inter / Open Sans
+Use large bold hero text
+Luxury spacing and clean layout
+
+UI Feel:
+
+Premium sports brand
+Smooth animations
+High-end luxury look
+Sharp bold sections
+Clean minimal design
+Professional corporate polish
+🏆 WEBSITE STRUCTURE
+
+Create a multi-section premium landing website with the following sections:
+
+🏠 HERO SECTION
+
+Full-screen luxury sports hero.
+
+Include:
+
+Brand Name: ZENITHH
+Tagline:
+"Rise Beyond Limits"
+Hero headline:
+Elite Performance Starts Here
+Subtext:
+Experience world-class sports training, facilities, and athletic excellence designed for champions.
+CTA Buttons:
+Join Now
+Explore Programs
+
+Hero Background:
+
+Dark luxury sports stadium image
+Subtle overlay gradient
+Motion animation on text
+Smooth hover button effects
+🏅 ABOUT ZENITHH SECTION
+
+Premium brand introduction.
+
+Content:
+
+Title:
+About Zenithh
+
+Description:
+ZENITHH is a premium sports performance brand dedicated to shaping elite athletes. Our facilities combine advanced technology, expert coaching, and professional-grade infrastructure to deliver world-class athletic development.
+
+Add:
+
+3 Feature Cards:
+Professional Coaching
+Advanced Infrastructure
+Athlete Performance Tracking
+
+Include:
+
+Icons
+Hover effects
+Smooth fade-in animations
+⚽ SPORTS PROGRAMS SECTION
+
+Display multiple sports offered.
+
+Create card-based layout:
+
+Programs:
+
+Football Training
+Cricket Academy
+Basketball Training
+Tennis Coaching
+Fitness & Conditioning
+Athletics Training
+
+Each card includes:
+
+Sports Image
+Program Title
+Short Description
+Hover animation
+Luxury card styling
+🏟 FACILITIES SECTION
+
+Showcase premium sports infrastructure.
+
+Include:
+
+Indoor Training Arena
+Outdoor Stadium
+Fitness Gym
+Recovery & Rehab Center
+Performance Lab
+
+Display:
+
+Grid layout
+Image gallery
+Hover zoom effect
+Premium captions
+👨‍🏫 COACHES SECTION
+
+Professional team showcase.
+
+Create coach profile cards
+
+Include:
+
+Coach Photo
+Name
+Role
+Experience Years
+
+Example:
+
+Coach Name:
+David Carter
+
+Role:
+Head Football Coach
+
+Experience:
+15+ Years
+
+Add:
+
+Hover elevation effects
+Rounded luxury cards
+🏆 ACHIEVEMENTS SECTION
+
+Showcase awards and achievements.
+
+Include:
+
+500+ Athletes Trained
+50+ Championships Won
+25+ Professional Players Produced
+10+ Years Excellence
+
+Use:
+
+Animated counters
+Bold typography
+🖼 GALLERY SECTION
+
+Premium sports gallery.
+
+Include:
+
+Training Moments
+Matches
+Facilities
+Events
+
+Use:
+
+Masonry grid layout
+Hover zoom animation
+🧾 TESTIMONIALS SECTION
+
+Add athlete success stories.
+
+Create:
+
+Sliding testimonial cards.
+
+Example:
+
+"ZENITHH transformed my performance and helped me reach national-level competition."
+
+— Rahul Sharma
+National Athlete
+
+Include:
+
+Star ratings
+Clean layout
+📍 CONTACT SECTION
+
+Professional contact form.
+
+Fields:
+
+Full Name
+Email
+Phone
+Sport Interest
+Message
+
+Include:
+
+Submit Button
+Form validation
+Clean layout
+
+Also include:
+
+📍 Address:
+ZENITHH Sports Arena
+
+📞 Phone
+📧 Email
+
+📰 CALL TO ACTION SECTION
+
+Strong conversion area.
+
+Headline:
+
+Start Your Champion Journey Today
+
+Button:
+
+Join Zenithh Now
+
+Luxury background styling.
+
+🔻 FOOTER
+
+Professional premium footer.
+
+Include:
+
+ZENITHH Logo
+Quick Links
+Programs
+Contact Info
+Social Media Icons
+Copyright:
+
+© 2026 ZENITHH
+Designed by AS KREATIV
+
+💻 TECHNICAL REQUIREMENTS
+
+Use:
+
+HTML5
+CSS3
+JavaScript
+Tailwind CSS
+
+OR
+
+React + Tailwind (Preferred)
+
+Must Include:
+
+Fully Responsive Design
+Mobile Friendly
+Tablet Optimized
+Desktop Optimized
+Smooth Scrolling
+Section Animations
+Hover Effects
+Sticky Navigation Bar
+Scroll Reveal Animations
+Fast Performance
+🧠 UX ENHANCEMENTS
+
+Add:
+
+Scroll animations
+Lazy image loading
+Smooth transitions
+Floating navigation
+Section fade-ins
+Elegant button hover glow
+🖼 IMAGE REQUIREMENTS
+
+Use:
+
+High-quality premium sports images
+
+Suggested themes:
+
+Stadium lighting
+Athletes training
+Team practice
+Gym performance
+Sports action shots
+
+Images should match:
+
+Luxury + Professional + Athletic Feel
+
+⭐ BONUS FEATURES (IMPORTANT)
+
+Add:
+
+Dark luxury theme
+Animated number counters
+Sticky transparent navbar
+Page loading animation
+Smooth section transitions
+Elegant typography
+No blue color usage anywhere
+🎯 FINAL OUTPUT EXPECTATION
+
+The final website must look like:
+
+A high-end sports brand website
+Suitable for client demo presentation
+Premium luxury feel
+Clean UI/UX
+Modern animations
+Professional-grade layout
+Corporate-quality polish
+
+Branding:
+
+ZENITHH
+Designed by AS KREATIV
+
+No blue colors must appear anywhere.

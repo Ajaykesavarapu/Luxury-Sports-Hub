@@ -66,7 +66,7 @@ const MSKAcademy = () => {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src="/images/placeholder.png"
+            src="/images/msk_hero.png"
             alt="Cricket Background"
             className="w-full h-full object-cover"
             style={{ filter: 'brightness(var(--hero-brightness))' }}
@@ -164,7 +164,7 @@ const MSKAcademy = () => {
                 <div className="absolute -inset-1 bg-[var(--color-gold-primary)]/20 rounded-none blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative overflow-hidden border border-[var(--color-gold-primary)]/30">
                   <img
-                    src="/images/placeholder.png"
+                    src="/images/msk_training.png"
                     alt="Athlete Training"
                     className="w-full h-[300px] md:h-[450px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700 hover:scale-105"
                   />
@@ -217,7 +217,7 @@ const MSKAcademy = () => {
                   <div className="absolute inset-0 bg-[var(--color-gold-primary)]/5 animate-pulse-slow blur-2xl"></div>
                   <div className="relative overflow-hidden border-b-2 border-r-2 border-[var(--color-gold-primary)] shadow-[20px_20px_0px_rgba(212,175,55,0.05)]">
                     <img
-                      src="/images/placeholder.png"
+                      src="/images/msk_cricket_academy.png"
                       alt="Cricket Action"
                       className="w-full h-[300px] md:h-[450px] object-cover"
                     />
@@ -379,7 +379,7 @@ const MSKAcademy = () => {
             >
               <div className="relative rounded-none overflow-hidden aspect-video border border-[var(--color-gold-primary)]/20 shadow-2xl">
                 <img
-                  src="/images/placeholder.png"
+                  src="/images/msk_facility.png"
                   alt="Academy Infrastructure"
                   className="w-full h-full object-cover"
                 />
