@@ -589,9 +589,14 @@ export default function Home() {
             Partner with Zenithh Sports Arena — Hyderabad's most comprehensive multi-sport facility.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/contact" className="btn-highlight">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-highlight"
+            >
               REGISTER NOW
-            </Link>
+            </a>
             <Link to="/sports" className="btn-secondary">
               EXPLORE SPORTS
             </Link>

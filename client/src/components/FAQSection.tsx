@@ -137,12 +137,14 @@ const FAQSection: React.FC<FAQSectionProps> = ({
               >
                 <MessageSquare size={18} /> Contact Us
               </Link>
-              <Link
-                to="/contact"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-outline !border-black !text-black hover:!bg-black hover:!text-white gap-3"
               >
                 <UserPlus size={18} /> Register Now
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>

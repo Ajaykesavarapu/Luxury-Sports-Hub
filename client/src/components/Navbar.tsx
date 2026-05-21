@@ -95,23 +95,27 @@ export default function Navbar() {
 
         {/* Mobile-only CTA in menu */}
         <li className="mobile-only-cta">
-          <Link
-            to="/contact"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-register w-full text-center flex items-center justify-center min-w-[180px] h-[38px]"
           >
             Register Now
-          </Link>
+          </a>
         </li>
       </ul>
 
       {/* RIGHT: CTA Button (Desktop) */}
       <div className="navbar-cta hidden md:flex items-center gap-4">
-        <Link
-          to="/contact"
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn-register flex items-center justify-center min-w-[120px] h-[38px] px-8 leading-none"
         >
           Register
-        </Link>
+        </a>
       </div>
 
     </nav>

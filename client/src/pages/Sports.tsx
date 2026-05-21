@@ -404,12 +404,14 @@ export default function SportsPage() {
                   >
                     VIEW DETAILS
                   </Link>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-primary"
                   >
                     REGISTER NOW
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </motion.div>

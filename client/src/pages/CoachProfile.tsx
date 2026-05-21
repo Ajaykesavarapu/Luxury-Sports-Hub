@@ -227,12 +227,14 @@ export default function CoachProfile() {
             <h2 className="text-4xl md:text-6xl font-black uppercase text-black leading-tight tracking-[0.1em] mb-10 max-w-4xl mx-auto">
               {coach.ctaText}
             </h2>
-            <Link 
-              to="/contact" 
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-black text-[var(--color-gold-primary)] px-12 py-5 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform"
             >
               JOIN ACADEMY NOW <Zap size={20} fill="currentColor" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>

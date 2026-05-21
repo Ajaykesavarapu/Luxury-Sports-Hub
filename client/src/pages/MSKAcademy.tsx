@@ -110,9 +110,14 @@ const MSKAcademy = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-5 justify-center"
           >
-            <Link to="/contact" className="bg-[var(--color-gold-primary)] text-black px-10 py-4 font-black uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[var(--color-gold-primary)] text-black px-10 py-4 font-black uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(212,175,55,0.4)]"
+            >
               Join Now
-            </Link>
+            </a>
             <Link to="/contact" className="border-2 border-[var(--color-gold-primary)] text-[var(--color-gold-primary)] px-10 py-4 font-black uppercase tracking-widest hover:bg-[var(--color-gold-primary)] hover:text-black transition-all transform hover:scale-105 active:scale-95">
               Enquire Today
             </Link>
@@ -416,9 +421,14 @@ const MSKAcademy = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link to="/contact" className="btn-primary min-w-[200px]">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary min-w-[200px]"
+              >
                 Apply Now
-              </Link>
+              </a>
               <Link to="/contact" className="btn-outline min-w-[200px] !border-black !text-black hover:!bg-black hover:!text-white">
                 Contact Us
               </Link>

@@ -68,9 +68,14 @@ export default function Events() {
                   </div>
                   <h3 className="text-2xl font-black text-[var(--text-primary)] uppercase tracking-wider mb-6 leading-tight">{event.title}</h3>
                   <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-10 font-light italic flex-1">"{event.desc}"</p>
-                  <Link to="/contact" className="btn-primary">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
                     REGISTER NOW
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}

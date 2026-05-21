@@ -136,9 +136,14 @@ export default function About() {
           <h2 className="text-4xl md:text-8xl font-black uppercase text-[var(--text-inverse)] mb-8 md:mb-12 leading-[1.1] tracking-widest">
             JOIN THE <br /> ZENITHH ELITE
           </h2>
-          <Link to="/contact" className="btn-highlight">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScxSW3CxICNVxvRtKCAJnJFk1FDjap4rkQ9vcBOS_fo0JJ9Gg/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-highlight"
+          >
             REGISTER NOW
-          </Link>
+          </a>
         </div>
       </section>
     </div>
