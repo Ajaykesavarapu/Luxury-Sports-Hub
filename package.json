@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build --prefix client && rm -rf dist && cp -r client/dist dist || rmdir /s /q dist & xcopy /E /I /Y client\\dist dist",
+    "build": "npm run build --prefix client && rm -rf dist && (cp -r client/dist dist && cp -r api dist/api) || (rmdir /s /q dist & xcopy /E /I /Y client\\dist dist & xcopy /E /I /Y api dist\\api)",
     "dev:client": "npm run dev --prefix client",
     "dev": "npm run dev --prefix client"
   },
