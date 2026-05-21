@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build --prefix client && tsc -p tsconfig.api.json && rm -rf dist && (cp -r client/dist dist && cp -r build/api dist/api) || (rmdir /s /q dist & xcopy /E /I /Y client\\dist dist & xcopy /E /I /Y build\\api dist\\api)",
+    "build": "npm run build --prefix client && rm -rf dist && cp -r client/dist dist || (rmdir /s /q dist & xcopy /E /I /Y client\\dist dist)",
     "dev:client": "npm run dev --prefix client",
     "dev": "npm run dev --prefix client"
   },
