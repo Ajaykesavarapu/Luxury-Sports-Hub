@@ -29,7 +29,7 @@ const GALLERY_IMAGES = [
   { src: "/images/gallery-carroms-2.jpg", caption: "Carrom Coins Arrangement", category: "Indoor Sports" },
   { src: "/images/air-hockey.jpg", caption: "Arcade Zone - Air Hockey", category: "Recreation" },
   { src: "/images/gallery-airhockey-1.jpg", caption: "Air Hockey Puck & Striker", category: "Recreation" },
-  { src: "/images/zumba.jpg", caption: "Zumba & Fitness Studio", category: "Indoor Sports" },
+  { src: "/images/zumba.png", caption: "Zumba & Fitness Studio", category: "Indoor Sports" },
   { src: "/images/about-arena.jpg", caption: "Zenithh Infrastructure", category: "Arena" },
   { src: "/images/DLP03630.JPG", caption: "Bridge Course Visit 1", category: "Events" },
   { src: "/images/DLP03631.JPG", caption: "Bridge Course Visit 2", category: "Events" },
